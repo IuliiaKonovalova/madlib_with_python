@@ -38,13 +38,13 @@ def formatting_pronoun(noun):
     """
     Checks the noun whether it is a female or male noun  
     """
-    
+    # Checks whether the word is female, returns 'she'
     if noun in dictionary_gender['female']:
         pronoun = 'she'
-
+    # Checks whether the word is male, returns 'he'
     elif noun in dictionary_gender['male']:
         pronoun = 'he'
-
+    # If the word gender neutral, returns 'it'
     else:
         pronoun = 'it'
     return pronoun
@@ -109,10 +109,10 @@ def main_madlib():
         noun7 = input('Type a noun: ')
     while not (len(verb4) >= 2 and verb4.isalpha()):
         verb4 = input('Type a verb: ')
-
+    # Madlib formatted string
     madlib = f'''
-{Style.BRIGHT}{noun1} {verb1} and went to a {adj2} {noun2}.
-'''
+    {Style.BRIGHT}{noun1} {verb1} and went to a {adj2} {noun2}.
+    '''
     print(madlib)
 
 main_madlib()
