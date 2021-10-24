@@ -20,6 +20,21 @@ dictionary_letters = {
 }
 
 
+def verb_formatting(verb):
+    """
+    Checks the verb and changes the form of a verb for a sentense
+    """
+    # Checks if the word ends with 'y', changes 'y' into 'ies'
+    if verb[-1] == 'y':
+        formatted_verb = verb[:-1] + 'ies'
+    elif verb == 'have':
+        formatted_verb = verb[:-2] + 's'
+    elif verb[-1] == 'o' or verb[-1] == 's' or verb[-1] == 'z' or verb[-1] == 'x' or (verb[-1] == 'c' and verb[-1] =='h'):
+        formatted_verb = verb + 'es'    
+    else:
+        formatted_verb = verb + 's'
+    return formatted_verb
+
 
 
 def main_madlib():
