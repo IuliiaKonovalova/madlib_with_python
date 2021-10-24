@@ -19,17 +19,29 @@ def main_madlib():
     checks the input,
     return the madlib formatted string 
     """
-    noun1 = 'cat'
-    verb1 = 'show'
-    adj2 = 'furry'
-    noun2 = 'robot'
-
+    adj1 = ''
+    noun1 = ''
+    verb1 = ''
+    adj2 = ''
+    noun2 = ''
+    famous_person = ''
+    verb2 = ''
+    verb3 = ''
+    noun3 = ''
+    size_adjective1 = ''
+    color_adjective1 = ''
+    noun4 = ''
+    noun5 = ''
+    size_adjective2 = ''
+    color_adjective2 = ''
+    noun6 = ''
+    noun7 = ''
+    verb4 = ''
 
 
     madlib = f'''
 {Style.BRIGHT}{noun1} {verb1} and went to a {adj2} {noun2}.
 '''
     print(madlib)
-
 
 main_madlib()
