@@ -27,10 +27,13 @@ def verb_formatting(verb):
     # Checks if the word ends with 'y', changes 'y' into 'ies'
     if verb[-1] == 'y':
         formatted_verb = verb[:-1] + 'ies'
+    # Checks if the input verb is 'have', changes 'has'
     elif verb == 'have':
         formatted_verb = verb[:-2] + 's'
+    # Checks if the word ends with 'o, s, z, x, ch, changes ending into 'es' 
     elif verb[-1] == 'o' or verb[-1] == 's' or verb[-1] == 'z' or verb[-1] == 'x' or (verb[-1] == 'c' and verb[-1] =='h'):
-        formatted_verb = verb + 'es'    
+        formatted_verb = verb + 'es'
+    # Adds 's' to the end of the input word in other cases      
     else:
         formatted_verb = verb + 's'
     return formatted_verb
@@ -39,10 +42,9 @@ def verb_formatting(verb):
 
 def main_madlib():
     """
-    Asks for user input,
-    checks the input,
-    return the madlib formatted string 
+    Asks for user input, checks the input, return the madlib formatted string 
     """
+    # Variables for a user's input
     adj1 = ''
     noun1 = ''
     verb1 = ''
@@ -61,7 +63,7 @@ def main_madlib():
     noun6 = ''
     noun7 = ''
     verb4 = ''
-
+    # Check the the user's inputs
     while not (len(adj1) >= 2 and adj1.isalpha()):
         adj1 = input('Type an adjective: ')
     while not (len(noun1) >= 2 and noun1.isalpha()):
@@ -98,7 +100,6 @@ def main_madlib():
         noun7 = input('Type a noun: ')
     while not (len(verb4) >= 2 and verb4.isalpha()):
         verb4 = input('Type a verb: ')
-
 
     madlib = f'''
 {Style.BRIGHT}{noun1} {verb1} and went to a {adj2} {noun2}.
