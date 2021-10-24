@@ -34,7 +34,20 @@ def verb_formatting(verb):
         formatted_verb = verb + 's'
     return formatted_verb
 
+def formatting_pronoun(noun):
+    """
+    Checks the noun whether it is a female or male noun  
+    """
+    
+    if noun in dictionary_gender['female']:
+        pronoun = 'she'
 
+    elif noun in dictionary_gender['male']:
+        pronoun = 'he'
+
+    else:
+        pronoun = 'it'
+    return pronoun
 
 def main_madlib():
     """
