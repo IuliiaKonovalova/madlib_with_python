@@ -13,6 +13,16 @@ from colorama import Fore, Back, Style
 from simple_term_menu import TerminalMenu
 
 
+
+dictionary_letters = {
+    'vowels': ['a', 'o', 'i', 'e', 'u'],
+    'consonant': ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+}
+
+
+
+
+
 def main_madlib():
     """
     Asks for user input,
