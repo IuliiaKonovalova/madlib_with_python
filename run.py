@@ -1,14 +1,15 @@
 import os
+import random
+from colorama import Fore, Style
+from simple_term_menu import TerminalMenu
 import nltk
+from pattern.en import pluralize, conjugate, PAST
+from gender_words import dictionary_gender
+from uncountable_nouns import uncountable_nouns
+from idioms import idioms_dictionary
+
 nltk.set_proxy('127.0.0.1:41091')
 nltk.download('wordnet')
-from pattern.en import pluralize, conjugate, PAST
-import random
-from colorama import Fore, Back, Style
-from simple_term_menu import TerminalMenu
-from gender_words import dictionary_gender
-from idioms import idioms_dictionary
-from uncountable_nouns import uncountable_nouns
 
 # Dictionary for vowels and consonants
 dictionary_letters = {
@@ -34,7 +35,7 @@ def verb_formatting(verb):
           verb[-1] == 'x' or
           (verb[-1] == 'c' and verb[-1] =='h')):
           # Since 1 of the conditions are true, add 'es'
-          formatted_verb = verb + 'es'
+        formatted_verb = verb + 'es'
     # Adds 's' to the end of the input word in other cases
     else:
         formatted_verb = verb + 's'
