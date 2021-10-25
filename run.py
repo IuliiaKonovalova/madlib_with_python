@@ -54,10 +54,13 @@ def formatting_personal_pronoun(noun):
     Checks the noun whether it is a female or male noun,
     places the correct personal pronoun when it is needed
     """
+    # Checks if the word classified as female, replace the word with 'her'
     if noun in dictionary_gender['female']:
         pronoun = 'her'
+    # Checks if the word classified as male, replace the word with 'him'
     elif noun in dictionary_gender['male']:
         pronoun = 'him'
+    # Otherwise, returns 'it'
     else:
         pronoun = 'it'
     return pronoun
