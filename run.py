@@ -93,7 +93,16 @@ def verb_infinitive(verb):
 
     return infinitive_verb
 
-
+def plural_noun(noun):
+    """
+    Checks whether the noun is countable or not and transform into plural if it's countable
+    This function is needed to prevent pluralization of uncountable nouns bt pattern package
+    """
+    # Checks if the noun is uncountable, if it is, returns the nouns
+    if noun in uncountable_nouns:
+        return noun
+    # Otherwise, pluralize noun with the patterns package
+    return pluralize(noun)
 
 def main_madlib():
     """
