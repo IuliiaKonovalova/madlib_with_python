@@ -27,16 +27,20 @@ def verb_formatting(verb):
     elif verb == 'have':
         formatted_verb = verb[:-2] + 's'
     # Checks if the word ends with 'o, s, z, x, ch, changes ending into 'es'
-    elif verb[-1] == 'o' or verb[-1] == 's' or verb[-1] == 'z' or verb[-1] == 'x' or (verb[-1] == 'c' and verb[-1] =='h'):
+    elif (verb[-1] == 'o' or
+          verb[-1] == 's' or
+          verb[-1] == 'z' or
+          verb[-1] == 'x' or
+          (verb[-1] == 'c' and verb[-1] =='h')):
         formatted_verb = verb + 'es'
-    # Adds 's' to the end of the input word in other cases      
+    # Adds 's' to the end of the input word in other cases
     else:
         formatted_verb = verb + 's'
     return formatted_verb
 
 def formatting_pronoun(noun):
     """
-    Checks the noun whether it is a female or male noun  
+    Checks the noun whether it is a female or male noun
     """
     # Checks whether the word is female, returns 'she'
     if noun in dictionary_gender['female']:
@@ -64,6 +68,25 @@ def formatting_personal_pronoun(noun):
     else:
         pronoun = 'it'
     return pronoun
+
+def verb_infinitive(verb):
+    """
+    Format verb into infinitive
+    """
+
+    if verb[-2] == 'i' and verb[-1] == 'e':
+        infinitive_verb = verb[:-2] + 'ying'
+
+    elif  verb[-1] == 'e':
+        infinitive_verb = verb[:-1] + 'ing'
+
+    elif verb[-2] in dictionary_letters['vowels'] and verb[-1] in dictionary_letters['consonant']:
+        infinitive_verb  = verb + verb[-1] + 'ing'  
+
+    else:
+        infinitive_verb = verb + 'ing'
+
+    return infinitive_verb
 
 def main_madlib():
     """
