@@ -49,9 +49,22 @@ def formatting_pronoun(noun):
         pronoun = 'it'
     return pronoun
 
+def formatting_personal_pronoun(noun):
+    """
+    Checks the noun whether it is a female or male noun,
+    places the correct personal pronoun when it is needed
+    """
+    if noun in dictionary_gender['female']:
+        pronoun = 'her'
+    elif noun in dictionary_gender['male']:
+        pronoun = 'him'
+    else:
+        pronoun = 'it'
+    return pronoun
+
 def main_madlib():
     """
-    Asks for user input, checks the input, return the madlib formatted string 
+    Asks for user input, checks the input, return the madlib formatted string
     """
     # Variables for a user's input
     adj1 = ''
