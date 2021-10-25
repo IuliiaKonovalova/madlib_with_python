@@ -1,13 +1,13 @@
-import nltk
 import os
+import nltk
 nltk.set_proxy('127.0.0.1:41091')
 nltk.download('wordnet')
 from pattern.en import pluralize, conjugate, PAST
 import random
 from colorama import Fore, Back, Style
 from simple_term_menu import TerminalMenu
-
 from gender_words import dictionary_gender
+from idioms import idioms_dictionary
 
 # Dictionary for vowels and consonants
 dictionary_letters = {
@@ -26,7 +26,7 @@ def verb_formatting(verb):
     # Checks if the input verb is 'have', changes 'has'
     elif verb == 'have':
         formatted_verb = verb[:-2] + 's'
-    # Checks if the word ends with 'o, s, z, x, ch, changes ending into 'es' 
+    # Checks if the word ends with 'o, s, z, x, ch, changes ending into 'es'
     elif verb[-1] == 'o' or verb[-1] == 's' or verb[-1] == 'z' or verb[-1] == 'x' or (verb[-1] == 'c' and verb[-1] =='h'):
         formatted_verb = verb + 'es'
     # Adds 's' to the end of the input word in other cases      
