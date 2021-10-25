@@ -32,7 +32,8 @@ def verb_formatting(verb):
           verb[-1] == 'z' or
           verb[-1] == 'x' or
           (verb[-1] == 'c' and verb[-1] =='h')):
-        formatted_verb = verb + 'es'
+          # Since 1 of the conditions are true, add 'es'
+          formatted_verb = verb + 'es'
     # Adds 's' to the end of the input word in other cases
     else:
         formatted_verb = verb + 's'
@@ -73,16 +74,19 @@ def verb_infinitive(verb):
     """
     Format verb into infinitive
     """
-
+    # Check if the verb ends with 'ie', changes 'ie' into 'ying'
     if verb[-2] == 'i' and verb[-1] == 'e':
         infinitive_verb = verb[:-2] + 'ying'
-
+    # Check if the verb ends with 'e', changes 'e' into 'ing'
     elif  verb[-1] == 'e':
         infinitive_verb = verb[:-1] + 'ing'
-
-    elif verb[-2] in dictionary_letters['vowels'] and verb[-1] in dictionary_letters['consonant']:
-        infinitive_verb  = verb + verb[-1] + 'ing'  
-
+    #  Checks if the verb ends vowel and consonant, adds 1 more consonant and 'ing'
+    elif (verb[-3] in dictionary_letters['consonant'] and
+        verb[-2] in dictionary_letters['vowels'] and
+        verb[-1] in dictionary_letters['consonant']):
+        # Since all three conditions are true, add 1 more consonant and 'ing'
+        infinitive_verb  = verb + verb[-1] + 'ing'
+    #  Otherwise adds 'ing' to the verb
     else:
         infinitive_verb = verb + 'ing'
 
