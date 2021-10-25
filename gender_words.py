@@ -40,7 +40,8 @@ dictionary_gender = {
         'policewoman',
         'stewardess',
         'congresswoman',
-        'saleswoman'
+        'saleswoman',
+        'fisherwoman'
     ],
     'male': [
         'man',
@@ -71,6 +72,7 @@ dictionary_gender = {
         'prophet',
         'priest',
         'wizard',
+        'witcher',
         'father',
         'grandfather',
         'uncle',
@@ -84,6 +86,10 @@ dictionary_gender = {
         'policeman',
         'steward',
         'congressman',
-        'salesman'
+        'salesman',
+        'jedi',
+        'headmaster',
+        'farmer',
+        'fisherman'
     ]
 }
