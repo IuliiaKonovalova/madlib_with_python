@@ -1,3 +1,7 @@
+"""
+File consist dictionary of idioms and their meaning
+"""
+
 idioms_dictionary = {
     'A blessing in disguise' : 'a good thing that seemed bad at first',
     'A dime a dozen': 'something common',
