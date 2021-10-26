@@ -125,6 +125,32 @@ def choosing_a_quantifier(noun):
     # Otherwise, returns several before the word
     return 'several'
 
+def random_idiom():
+    """
+    Takes random idiom from the dictionary,
+    Takes its meaning
+    Takes 3 more meanings of random idioms from the dictionary
+    Returns nested list
+    """
+    # Get a random idiom from the keys in idioms dictionary
+    shuffle_idioms = list(idioms_dictionary.keys())
+    random.shuffle(shuffle_idioms)
+    shuffle_meanings = list(idioms_dictionary.values())
+    random.shuffle(shuffle_meanings)
+    # Create list for idioms' meanings
+    meanings = []
+    # Push meaning of chosen idiom to this list
+    main_meaning = idioms_dictionary[shuffle_idioms[0]]
+    meanings.append(main_meaning)
+    # Add 3 more random meanings to the list of meanings
+    for mean in range(4):
+        mean = random.choice(shuffle_meanings)
+        meanings.append(mean)
+    random.shuffle(meanings)
+    # Create nested list with random idiom and its meaning, plus 3 random meanings
+    main_list = [shuffle_idioms[0], meanings]
+    return main_list
+
 def main_madlib():
     """
     Asks for user input, checks the input, return the madlib formatted string
@@ -187,7 +213,7 @@ def main_madlib():
         verb4 = input('Type a verb: ')
     # Madlib formatted string
     madlib = f'''
-    {Style.BRIGHT}{noun1} {verb1} and went to a {adj2} {noun2}.
+{Style.BRIGHT}{noun1} {verb1} and went to a {adj2} {noun2}.
     '''
     print(madlib)
 
