@@ -151,6 +151,8 @@ def random_idiom():
     main_list = [shuffle_idioms[0], meanings]
     return main_list
 
+idioms_list = random_idiom()
+
 def main_madlib():
     """
     Asks for user input, checks the input, return the madlib formatted string
