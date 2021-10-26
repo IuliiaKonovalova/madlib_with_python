@@ -115,6 +115,16 @@ def choosing_article(word):
     # Otherwise, adds 'a' before the word
     return f'a {word}'
 
+def choosing_a_quantifier(noun):
+    """
+    Checks whether the noun is countable or not and transform into plural if it's countable
+    """
+    # Checks if the word is uncountable, if yes, adds 'some' before the word
+    if noun in uncountable_nouns:
+        return 'some'
+    # Otherwise, returns several before the word
+    return 'several'
+
 def main_madlib():
     """
     Asks for user input, checks the input, return the madlib formatted string
