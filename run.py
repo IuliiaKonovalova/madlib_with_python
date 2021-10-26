@@ -105,6 +105,16 @@ def plural_noun(noun):
     # Otherwise, pluralize noun with the patterns package
     return pluralize(noun)
 
+def choosing_article(word):
+    """
+    Checks which article to use before the word and place the article before it
+    """
+    # Checks if the word starts with a vowel, adds 'an' before the word
+    if word[0] in dictionary_letters['vowels']:
+        return f'an {word}'
+    # Otherwise, adds 'a' before the word
+    return f'a {word}'
+
 def main_madlib():
     """
     Asks for user input, checks the input, return the madlib formatted string
