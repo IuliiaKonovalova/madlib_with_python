@@ -153,6 +153,22 @@ def random_idiom():
 
 idioms_list = random_idiom()
 
+def run_the_time_error():
+    """
+    Prevent "RuntimeError: generator raised StopIteration"
+    The package has raised StopIteration that was missed in python earier versions; thus, it worked before. 
+    Since the package has not been updates since August 2018, it raises the error and stops the app.
+    "PEP 479 is enabled for all code in Python >= 3.7, meaning that StopIteration exceptions raised directly or indirectly in coroutines and generators are transformed into RuntimeError exceptions."
+    Link to this change:
+    https://docs.python.org/3/whatsnew/3.7.html#changes-in-python-behavior
+    """
+    try:
+        conjugate(verb = '', tense = PAST)
+    except:
+        pass
+
+run_the_time_error()
+
 def main_madlib():
     """
     Asks for user input, checks the input, return the madlib formatted string
@@ -210,7 +226,7 @@ def main_madlib():
     while not (len(noun6) >= 2 and noun6.isalpha()):
         noun6 = input('Type a noun: ')
     while not (len(noun7) >= 2 and noun7.isalpha()):
-        noun7 = input('Type a noun: ')
+        noun7 = input('Type a noun (living thing): ')
     while not (len(verb4) >= 2 and verb4.isalpha()):
         verb4 = input('Type a verb: ')
     # Madlib formatted stringbig
