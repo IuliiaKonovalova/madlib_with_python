@@ -105,15 +105,21 @@ def plural_noun(noun):
     # Otherwise, pluralize noun with the patterns package
     return pluralize(noun)
 
-def choosing_article(word):
+def choosing_article(*words):
     """
     Checks which article to use before the word and place the article before it
     """
-    # Checks if the word starts with a vowel, adds 'an' before the word
-    if word[0] in dictionary_letters['vowels']:
-        return f'an {word}'
-    # Otherwise, adds 'a' before the word
-    return f'a {word}'
+    # Checks if the last word is countable.
+    #If it is uncountable, returns all words
+    if words[-1] in uncountable_nouns:
+        return ' '.join(words)
+    else:
+        # Checks if the word starts with a vowel, adds 'an' before the word
+        if words[0][0] in dictionary_letters['vowels']:
+            return 'an ' + ' '.join(words)
+        # Otherwise, adds 'a' before the word
+        else: 
+            return 'a ' + ' '.join(words)
 
 def choosing_a_quantifier(noun):
     """
@@ -171,6 +177,29 @@ def run_the_time_error():
         pass
 
 run_the_time_error()
+
+def draw_holes(mean):
+    """
+    Draws pictures of holes for the story
+    """
+    height = 7
+    length = 21
+
+    sth1 = '*' * length
+    list1 = []
+    for i in range(1, height, 2):
+        sth2 = (i * (' ')).center(length, '*')
+        list1.append(sth2)
+
+    sth3 = "     ".upper().center(length, '*')
+
+    list2 = []
+    for j in range(height-2, -1, -2):
+        sth4 = (j * (' ')).center(length, '*')
+        list2.append(sth4)
+
+    return f'{Fore.YELLOW}{sth1}\n    {list1[0]}\n    {list1[1]}\n    {list1[2]}\n    {sth3} {Fore.RED}{mean}\n    {Fore.YELLOW}{list2[0]}\n    {list2[1]}\n    {list2[2]}\n    {sth1}{Fore.RESET}'
+
 
 def main_madlib():
     """
