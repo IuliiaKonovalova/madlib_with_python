@@ -379,6 +379,14 @@ def show_the_rules():
     {Fore.YELLOW}3. {Fore.WHITE}Don't cheat!
     ''')
 
+def main():
+    """
+    Main program function
+    """
+    # Clears the terminal
+    os.system('cls' if os.name == 'nt' else 'clear')
+    # Shows welcoming message
 
+    main_madlib()
 
-main_madlib()
+main()
