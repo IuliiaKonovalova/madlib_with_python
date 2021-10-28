@@ -1,14 +1,14 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Maddest Madlib
 
-Welcome USER_NAME,
+The Maddest Madlib is a Python terminal project whose primary purpose is to boost users' moods and provide various experiences.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Secondarily, it may help users to practice English grammar.
 
-## Reminders
+Users can quickly learn the rules of the game and type any words according to the provided instructions. In the end, they will receive a story that includes words from the user's input which are modified according to the English grammatical rules as much as it is possible.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+
+
+
 
 ## Creating the Heroku app
 
