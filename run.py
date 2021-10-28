@@ -386,7 +386,9 @@ def main():
     # Clears the terminal
     os.system('cls' if os.name == 'nt' else 'clear')
     # Shows welcoming message
-
+    print(f'''
+    {Fore.GREEN}Welcome to {Fore.YELLOW}Another Madlib Game!
+    ''')
     main_madlib()
 
 main()
