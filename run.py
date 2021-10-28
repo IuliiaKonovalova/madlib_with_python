@@ -159,6 +159,11 @@ def random_idiom():
 
 idioms_list = random_idiom()
 
+def choose_correct_form_be(word):
+    if word in uncountable_nouns:
+        return 'is'
+    return 'are'
+
 def run_the_time_error():
     """
     Prevent "RuntimeError: generator raised StopIteration"
