@@ -1,1 +1,4 @@
-# Your requirements go here
+colorama==0.4.4
+nltk==3.5
+Pattern==3.6
+simple_term_menu==1.4.1
