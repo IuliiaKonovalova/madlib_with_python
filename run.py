@@ -83,7 +83,8 @@ def verb_infinitive(verb):
     elif  verb[-1] == 'e':
         infinitive_verb = verb[:-1] + 'ing'
     #  Checks if the verb ends vowel and consonant, adds 1 more consonant and 'ing'
-    elif (verb[-3] in dictionary_letters['consonant'] and
+    elif (len(verb) > 2 and
+        verb[-3] in dictionary_letters['consonant'] and
         verb[-2] in dictionary_letters['vowels'] and
         verb[-1] in dictionary_letters['consonant']):
         # Since all three conditions are true, add 1 more consonant and 'ing'
