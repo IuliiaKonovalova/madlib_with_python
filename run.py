@@ -231,41 +231,41 @@ def main_madlib():
     noun7 = ''
     verb4 = ''
     # Check the the user's inputs
-    while not (len(adj1) >= 2):
+    while len(adj1) < 2:
         adj1 = input('Type an adjective: ')
-    while not (len(noun1) >= 2):
+    while len(noun1) < 2:
         noun1 = input('Type a noun (living thing): ')
-    while not (len(verb1) >= 2):
+    while len(verb1) < 2:
         verb1 = input('Type a verb: ')
-    while not (len(adj2) >= 2):
+    while len(adj2) < 2:
         adj2 = input('Type an adjective: ')
-    while not (len(noun2) >= 2):
+    while len(noun2) < 2:
         noun2 = input('Type a noun: ')
-    while not (len(famous_person) >= 2):
+    while len(famous_person) < 2:
         famous_person = input("Type a famous person: ")
-    while not (len(verb2) >= 2):
+    while len(verb2) < 2:
         verb2 = input('Type a verb: ')
-    while not (len(verb3) >= 2):
+    while len(verb3) < 2:
         verb3 = input('Type a verb: ')
-    while not (len(noun3) >= 2):
+    while len(noun3) < 2:
         noun3 = input('Type a noun: ')
-    while not (len(size_adjective1) >= 2):
+    while len(size_adjective1) < 2:
         size_adjective1 = input('Type a size adjective: ')
-    while not (len(color_adjective1) >= 2):
+    while len(color_adjective1) < 2:
         color_adjective1 = input('Type a color adjective: ')
-    while not (len(noun4) >= 2):
+    while len(noun4) < 2:
         noun4 = input('Type a noun: ')
-    while not (len(noun5) >= 2):
+    while len(noun5) < 2:
         noun5 = input('Type a noun: ')
-    while not (len(size_adjective2) >= 2):
+    while len(size_adjective2) < 2:
         size_adjective2 = input('Type a size adjective: ')
-    while not (len(color_adjective2) >= 2):
+    while len(color_adjective2) < 2:
         color_adjective2 = input('Type a color adjective: ')
-    while not (len(noun6) >= 2):
+    while len(noun6) < 2:
         noun6 = input('Type a noun: ')
-    while not (len(noun7) >= 2):
+    while len(noun7) < 2:
         noun7 = input('Type a noun (living thing): ')
-    while not (len(verb4) >= 2):
+    while len(verb4) < 2:
         verb4 = input('Type a verb: ')
     # Madlib formatted stringbig
 
@@ -309,7 +309,7 @@ def main_madlib():
 
     {Fore.BLUE}"That's it!"
 
-    {Fore.WHITE}On the front side of the {size_adjective2} {color_adjective2} {noun6} were a picture of a small version of the {choosing_article(size_adjective2, color_adjective2, noun6)} and a plate with 4 holes with sentences near them.
+    {Fore.WHITE}On the front side of the {size_adjective2} {color_adjective2} {noun6} were a picture of a small version of {choosing_article(size_adjective2, color_adjective2, noun6)} and a plate with 4 holes with sentences near them.
     {draw_holes(idioms_list[1][0])}
     {draw_holes(idioms_list[1][1])}
     {draw_holes(idioms_list[1][2])}
@@ -368,5 +368,17 @@ def main_madlib():
 
     '''
     print(madlib)
+
+def show_the_rules():
+    """
+    Shows the rules of the game
+    """
+    print(f'''
+    {Fore.YELLOW}1. {Fore.WHITE}Follow the instructions!
+    {Fore.YELLOW}2. {Fore.WHITE}Type the words correctly!
+    {Fore.YELLOW}3. {Fore.WHITE}Don't cheat!
+    ''')
+
+
 
 main_madlib()
