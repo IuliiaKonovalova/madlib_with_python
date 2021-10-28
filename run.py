@@ -389,6 +389,18 @@ def main():
     print(f'''
     {Fore.GREEN}Welcome to {Fore.YELLOW}Another Madlib Game!
     ''')
-    main_madlib()
+    # Presents options for the user
+    options = ['1. Learn the rules', '2. Start the game', '3. Quit']
+    main_menu = TerminalMenu(options)
+    quitting = False
+    while quitting is not True:
+        options_index = main_menu.show()
+        options_choice = options[options_index]
+        if options_choice == '3. Quit':
+            quitting = True
+        elif options_choice == '1. Learn the rules':
+            show_the_rules()
+        else:
+            main_madlib()
 
 main()
