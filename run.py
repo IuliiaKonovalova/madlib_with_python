@@ -61,13 +61,14 @@ def verb_formatting(verb):
           verb[-1] == 's' or
           verb[-1] == 'z' or
           verb[-1] == 'x' or
-          (verb[-1] == 'c' and verb[-1] =='h')):
-          # Since 1 of the conditions are true, add 'es'
+          (verb[-1] == 'c' and verb[-1] == 'h')):
+        # if 1 of the conditions are true, adds 'es'
         formatted_verb = verb + 'es'
     # Adds 's' to the end of the input word in other cases
     else:
         formatted_verb = verb + 's'
     return formatted_verb
+
 
 def formatting_pronoun(noun):
     """
@@ -83,6 +84,7 @@ def formatting_pronoun(noun):
     else:
         pronoun = 'it'
     return pronoun
+
 
 def formatting_personal_pronoun(noun):
     """
@@ -100,6 +102,7 @@ def formatting_personal_pronoun(noun):
         pronoun = 'it'
     return pronoun
 
+
 def verb_infinitive(verb):
     """
     Format verb into infinitive
@@ -107,26 +110,32 @@ def verb_infinitive(verb):
     # Check if the verb ends with 'ie', changes 'ie' into 'ying'
     if verb[-2] == 'i' and verb[-1] == 'e':
         infinitive_verb = verb[:-2] + 'ying'
-    # Check if the verb ends with 'e', changes 'e' into 'ing'
-    elif  verb[-1] == 'e':
+
+    # Check if the verb ends with 'e', changes 'e' to 'ing'
+    elif verb[-1] == 'e':
         infinitive_verb = verb[:-1] + 'ing'
+
     #  Checks if the verb ends vowel and consonant, adds 1 more consonant and 'ing'
     elif (len(verb) > 2 and
-        verb[-3] in dictionary_letters['consonant'] and
-        verb[-2] in dictionary_letters['vowels'] and
-        verb[-1] in dictionary_letters['consonant']):
+            verb[-3] in dictionary_letters['consonant'] and
+            verb[-2] in dictionary_letters['vowels'] and
+            verb[-1] in dictionary_letters['consonant']):
         # Since all three conditions are true, add 1 more consonant and 'ing'
-        infinitive_verb  = verb + verb[-1] + 'ing'
+        infinitive_verb = verb + verb[-1] + 'ing'
+
     #  Otherwise adds 'ing' to the verb
     else:
         infinitive_verb = verb + 'ing'
 
     return infinitive_verb
 
+
 def plural_noun(noun):
     """
-    Checks whether the noun is countable or not and transform into plural if it's countable
-    This function is needed to prevent pluralization of uncountable nouns bt pattern package
+    Checks whether the noun is countable or not,
+    transform into plural if it's countable
+    This function is needed to prevent
+    pluralization of uncountable nouns bt pattern package
     """
     # Checks if the noun is uncountable, if it is, returns the nouns
     if noun in uncountable_nouns:
@@ -134,12 +143,13 @@ def plural_noun(noun):
     # Otherwise, pluralize noun with the patterns package
     return pluralize(noun)
 
+
 def choosing_article(*words):
     """
     Checks which article to use before the word and place the article before it
     """
     # Checks if the last word is countable.
-    #If it is uncountable, returns all words
+    # If it is uncountable, returns all words
     if words[-1] in uncountable_nouns:
         return ' '.join(words)
     else:
@@ -147,18 +157,21 @@ def choosing_article(*words):
         if words[0][0] in dictionary_letters['vowels']:
             return 'an ' + ' '.join(words)
         # Otherwise, adds 'a' before the word
-        else: 
+        else:
             return 'a ' + ' '.join(words)
+
 
 def choosing_a_quantifier(noun):
     """
-    Checks whether the noun is countable or not and transform into plural if it's countable
+    Checks whether the noun is countable or not,
+    transform into plural if it's countable
     """
     # Checks if the word is uncountable, if yes, adds 'some' before the word
     if noun in uncountable_nouns:
         return 'some'
     # Otherwise, returns several before the word
     return 'several'
+
 
 def random_idiom():
     """
@@ -182,35 +195,41 @@ def random_idiom():
         mean = random.choice(shuffle_meanings)
         meanings.append(mean)
     random.shuffle(meanings)
-    # Create nested list with random idiom and its meaning, plus 3 random meanings
+    # Create nested list with idiom and its meaning, plus 3 random meanings
     main_list = [shuffle_idioms[0], meanings]
     return main_list
 
 idioms_list = random_idiom()
+
 
 def choose_correct_form_be(word):
     if word in uncountable_nouns:
         return 'is'
     return 'are'
 
+
 def run_the_time_error():
     """
     Prevent "RuntimeError: generator raised StopIteration"
-    The package has raised StopIteration that was missed in python earier versions.
+    The package has raised StopIteration,
+    that was missed in python earier versions.
     Thus, it had worked before Python version 3.7 was introduced.
-    Since the package has not been updates since August 2018, it raises the error and stops the app.
-    "PEP 479 is enabled for all code in Python >= 3.7, meaning that StopIteration exceptions raised
+    Since the package has not been updates since August 2018,
+    it raises the error and stops the app.
+    "PEP 479 is enabled for all code in Python >= 3.7,
+    meaning that StopIteration exceptions raised
     directly or indirectly in coroutines and generators are transformed
     into RuntimeError exceptions."
     Link to this change:
     https://docs.python.org/3/whatsnew/3.7.html#changes-in-python-behavior
     """
     try:
-        conjugate(verb = '', tense = PAST)
+        conjugate(verb='', tense=PAST)
     except RuntimeError:
         pass
 
 run_the_time_error()
+
 
 def draw_holes(mean):
     """
@@ -307,7 +326,8 @@ def main_madlib():
     {Fore.YELLOW}
     "Do not worry! I have a lot of {plural_noun(noun4)}! I can afford it!"
     {Fore.BLUE}
-    "As you wish, {famous_person.title()}. You see, I am just a poor {noun1}... So I have only {plural_noun(noun5)}.
+    "As you wish, {famous_person.title()}. You see, I am just a poor {noun1}...
+    So I have only {plural_noun(noun5)}.
     If you want to share {choosing_a_quantifier(noun4)} {plural_noun(noun4)}, let's get it!"{Fore.WHITE} - said the {noun1}.
 
     And they started walking towards {choosing_article(size_adjective2, color_adjective2, noun6)}.
@@ -347,55 +367,63 @@ def main_madlib():
 
     {Fore.BLUE}"Why do we need to {verb4} before throwing this coin?"{Fore.WHITE} - asked the {adj1} {noun1}.
 
-    {Fore.YELLOW}"That's obvious! Because the old {noun7} was {verb_infinitive(verb4)}!"
+    {Fore.YELLOW}"That's obvious!
+    Because the old {noun7} was {verb_infinitive(verb4)}!"
 
     {Fore.BLUE}"Ok! Now you have to figure out which whole is needed."
 
     {Fore.YELLOW}"Why me? I am not so savvy!"
 
-    {Fore.BLUE}"Look! I am just a poor {noun1}! I have only {plural_noun(noun5)}! No brain!
+    {Fore.BLUE}"Look! I am just a poor {noun1}!
+    I have only {plural_noun(noun5)}! No brain!
     So it is you, {famous_person.title()}, who have to make a decision!"
 
     {Fore.YELLOW}"Why me?"
 
-    {Fore.BLUE}"It's deffinitely a strange question! The answer is simple -  because you have a lot of {plural_noun(noun4)} and you are famous!"
+    {Fore.BLUE}"It's deffinitely a strange question!
+    The answer is simple -  because you have a lot of {plural_noun(noun4)} and you are famous!"
 
-    {Fore.YELLOW}"That's fair... But still my {plural_noun(noun4)} {choose_correct_form_be(noun4)} not helpful here. Let me think...
+    {Fore.YELLOW}"That's fair...
+    But still my {plural_noun(noun4)} {choose_correct_form_be(noun4)} not helpful here.
+    Let me think...
     If I were an old {noun7}, what would I choose..."
 
     {Fore.WHITE}After pondering for an hour, {famous_person.title()} took a coin and through it into the hole with the sentence {Fore.RED}"{idioms_dictionary.get(idioms_list[0])}"{Fore.WHITE}.
     As soon as the coin disappeared in the hole, the ground opened up under them and swallowed them literally.
-    They were falling down to nowhere... no light, no even a soul, just darkness everywhere...
+    They were falling down to nowhere...
+    no light, no even a soul, just darkness everywhere...
     Eventually, the reached the ground.
     As luck would have it, they survived!
 
     {Fore.BLUE}"Why all of this is happenning to us?"{Fore.WHITE} - yelled the already terrified {noun1}.
 
-    {Fore.YELLOW}"I sincerely can't get my head around this as well! It might be all about {choosing_article(size_adjective1, color_adjective1, noun3)}..."{Fore.WHITE} - replied {famous_person.title()}.
+    {Fore.YELLOW}"I sincerely can't get my head around this as well!
+    It might be all about {choosing_article(size_adjective1, color_adjective1, noun3)}..."{Fore.WHITE} - replied {famous_person.title()}.
 
-    {Fore.BLUE}"Yeah! I heard the the quality of the {size_adjective1} {color_adjective1} {noun3} is marvelous!"{Fore.WHITE}.
+    {Fore.BLUE}"Yeah!
+    I heard the the quality of the {size_adjective1} {color_adjective1} {noun3} is marvelous!"{Fore.WHITE}.
 
     Had it not been for the lack of light, they would have realized on time that they were not alone.
     Then the light turned on and they saw everything...
-    They were in a huge room, where everything was colored in {color_adjective2}. They were surrounded by millions of old {plural_noun(noun7)} with their spears pointing at our travellers.
+    They were in a huge room, where everything was colored in {color_adjective2}.
+    They were surrounded by millions of old {plural_noun(noun7)} with their spears pointing at our travellers.
 
     {Fore.BLUE}"What's going on?"{Fore.WHITE} - whispered the poor {noun1}.
 
-    {Fore.YELLOW}"Unacceptable! I am {famous_person.title()}! You have to know who I am! Let us go!"
+    {Fore.YELLOW}"Unacceptable!
+    I am {famous_person.title()}!
+    You have to know who I am! Let us go!"
 
-    {Fore.RED}"Silence!"{Fore.WHITE} - one of the old {plural_noun(noun7)} ordered. - {Fore.RED}"You think you are allowed to be cocky!?"
+    {Fore.RED}"Silence!"{Fore.WHITE} - one of the old {plural_noun(noun7)} ordered.
+    {Fore.RED}"You think you are allowed to be cocky!?"
 
-    {Fore.YELLOW}"Ok, let's make a deal! You see, I am in possession of lots of {plural_noun(noun4)}! So I will give you half of my fortune if you let us go with {choosing_article(size_adjective1, color_adjective1, noun3)}"
-
-
-    
-    1. {idioms_list[1][0]}
-    2. {idioms_list[1][1]}
-    3. {idioms_list[1][2]}
-    4. {idioms_list[1][3]}
+    {Fore.YELLOW}"Ok, let's make a deal!
+    You see, I am in possession of lots of {plural_noun(noun4)}!
+    So I will give you half of my fortune if you let us go with {choosing_article(size_adjective1, color_adjective1, noun3)}"
 
     '''
     print(madlib)
+
 
 def show_the_rules():
     """
@@ -406,6 +434,7 @@ def show_the_rules():
     {Fore.YELLOW}2. {Fore.WHITE}Type the words correctly!
     {Fore.YELLOW}3. {Fore.WHITE}Don't cheat!
     ''')
+
 
 def main():
     """
