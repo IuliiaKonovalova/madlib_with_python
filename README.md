@@ -173,7 +173,23 @@ The flowchart represent the logic of the application:
     ```
 
 
-1. 
+1. Pattern package could not spot the uncountable nouns, and as a result, pluralized uncountable nouns automatically.
+
+    - *Solutions:* created list of uncountable nouns and a function which checks whether the word is countable or uncountable at first. Then if it is countable, pluralize this word.
+
+    ```python
+    def plural_noun(noun):
+    """
+    Checks whether the noun is countable or not and transform into plural if it's countable
+    This function is needed to prevent pluralization of uncountable nouns bt pattern package
+    """
+    # Checks if the noun is uncountable, if it is, returns the nouns
+    if noun in uncountable_nouns:
+        return noun
+    # Otherwise, pluralize noun with the patterns package
+    return pluralize(noun)
+    ```
+
 
 + **Unsolved bugs**
 
@@ -182,3 +198,8 @@ The flowchart represent the logic of the application:
       - For example: word 'bus' was pluralized as 'buss'.
 
 ---
+
+
+## Testing
+
+
