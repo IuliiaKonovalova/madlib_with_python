@@ -128,6 +128,7 @@ The flowchart represent the logic of the application:
 1. The function ```choosing_article(word)``` did not give the correct article if the nout was uncountable.
 
     - *Solutions:* rewrote function with using args; rather than checking only the beginning of the word, it checks all arguments and presents the correct  article
+
      ```python
     def choosing_article(*words):
         """
@@ -146,9 +147,31 @@ The flowchart represent the logic of the application:
                 return 'a ' + ' '.join(words)
       ```
 
-1. The audio played '/' as "slash" for the words that had two spelling variations.
-        
-    - *Solution:* Add ```replace();``` method with two parameters ```currentWord.replace('/', 'or');```to the speakFunction().
+1. Conjugate function did not work due to the RunTimeError raised by Python.
+
+    - *Solutions:* add function wich runs the function at first raising this error and then passes this error.
+
+     ```python
+    def run_the_time_error():
+        """
+        Prevent "RuntimeError: generator raised StopIteration"
+        The package has raised StopIteration that was missed in python earier versions.
+        Thus, it had worked before Python version 3.7 was introduced.
+        Since the package has not been updates since August 2018, it raises the error and stops the app.
+        "PEP 479 is enabled for all code in Python >= 3.7, meaning that StopIteration exceptions raised
+        directly or indirectly in coroutines and generators are transformed
+        into RuntimeError exceptions."
+        Link to this change:
+        https://docs.python.org/3/whatsnew/3.7.html#changes-in-python-behavior
+        """
+        try:
+            conjugate(verb = '', tense = PAST)
+        except RuntimeError:
+            pass
+
+    run_the_time_error()
+    ```
+
 
 1. 
 
