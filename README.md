@@ -177,6 +177,8 @@ The flowchart represent the logic of the application:
 
 + **Unsolved bugs**
 
-    - None.
+    - The pattern.en package does not pluralize all words correctly even if their plural.
+
+      - For example: word 'bus' was pluralized as 'buss'.
 
 ---
