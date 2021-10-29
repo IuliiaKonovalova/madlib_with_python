@@ -421,6 +421,24 @@ def main_madlib():
     You see, I am in possession of lots of {plural_noun(noun4)}!
     So I will give you half of my fortune if you let us go with {choosing_article(size_adjective1, color_adjective1, noun3)}"
 
+    {Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {plural_noun(noun7)} responded - {Fore.RED}Your {plural_noun(noun4)} {choose_correct_form_be(noun4)} nothing!
+    But you two stole the golden coin!"
+
+    {Fore.BLUE}"Excuse me, sir"{Fore.WHITE} - mumbled {noun1} - {Fore.BLUE}"That's not true!
+    One of the you gave it to us, {conjugate(verb4, tense = PAST)}, and left silently".
+
+    {Fore.RED}"listen! You don't have the right to take anything from our folks!
+    But you did! Moreover, you also performed our thing!"
+    
+    {Fore.BLUE}"What thing? We did nothing!
+    We just wanted to have {choosing_article(size_adjective1, color_adjective1, noun3)} together!"
+
+    {Fore.RED}"You {conjugate(verb4, tense = PAST)} on perpose!"{Fore.WHITE} - the old {noun7} turned to the old {plural_noun(noun7)} who were holding spears.
+    {Fore.RED}"Put them in prison! Now!".
+
+    {Fore.WHITE}The {plural_noun(noun7)} with spears stepped forward and grabbed our travelers.
+    They were dragging them through endless {color_adjective2} tunnel.
+
     '''
     print(madlib)
 
