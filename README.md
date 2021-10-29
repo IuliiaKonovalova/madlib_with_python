@@ -8,6 +8,8 @@ Secondarily, it may help users to practice English grammar.
 
 Users can quickly learn the rules of the game and type any words according to the provided instructions. In the end, they will receive a story that includes words from the user's input which are modified according to the English grammatical rules as much as it is possible.
 
+---
+
 ## How to play:
 
 <details>
@@ -23,6 +25,8 @@ Users can quickly learn the rules of the game and type any words according to th
   *Here the link goes*
 
 </details>
+
+---
 
 ## Features
 
@@ -66,7 +70,21 @@ Users can quickly learn the rules of the game and type any words according to th
 
 </details>
 
+---
 
+## Flowchart
+
+<details>
+  <summary>Click to expand!</summary>
+
+The flowchart represent the logic of the application:
+
+  ![Flash Card Page](documentation/flowchart_madlib.png)
+
+</details>
+
+
+---
 ## Technologies Used
 
 ### Languages:
