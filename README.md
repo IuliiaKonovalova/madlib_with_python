@@ -1,10 +1,28 @@
 # The Maddest Madlib
 
+*Here the link goes*
+
 The Maddest Madlib is a Python terminal project whose primary purpose is to boost users' moods and provide various experiences.
 
 Secondarily, it may help users to practice English grammar.
 
 Users can quickly learn the rules of the game and type any words according to the provided instructions. In the end, they will receive a story that includes words from the user's input which are modified according to the English grammatical rules as much as it is possible.
+
+## How to play:
+
+<details>
+  <summary>Click to expand!</summary>
+
+  1. Open the link.
+  1. Learn the rules.
+  1. Type the words according to the instructions.
+  1. Read the story after all and have some fun.
+  1. Try to enter different words to have even more fun.
+  1. As soon as you are sick and tired of the game choose "Quit" and **send** the link of this program to your friends!
+
+  *Here the link goes*
+
+</details>
 
 ## Features
 
