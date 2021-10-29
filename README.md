@@ -77,5 +77,27 @@ Users can quickly learn the rules of the game and type any words according to th
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) used to construct the elements involved in building the mock terminal in the browser
 
+### Frameworks/Libraries, Programmes and Tools:
+#### Python modules/packages:
+
+##### Standard library imports:
+
+- [random](https://docs.python.org/3/library/random.html) was used to implement pseudo-random number generation.
+- [os](https://docs.python.org/3/library/os.html ) was used to clear the terminal before running the program.
+##### Third-party imports:
+
+- [NLTK Package](https://www.nltk.org/) was used in order to be able to work with pattern package.
+- [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) was used to pluralize nouns where it is needed.
+- [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/) was used to implement menu.
+- [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the project.
+
+#### Other tools:
+
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website.
+- [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
+- [Draw.io](https://www.lucidchart.com/) was used to make flowchart for the README file.
+
 
 
