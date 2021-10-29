@@ -6,26 +6,45 @@ Secondarily, it may help users to practice English grammar.
 
 Users can quickly learn the rules of the game and type any words according to the provided instructions. In the end, they will receive a story that includes words from the user's input which are modified according to the English grammatical rules as much as it is possible.
 
+## Features
 
+<details>
+  <summary>Click to expand!</summary>
+  
+  - **When the program is loaded**
 
+  The user can see a welcoming message which engage to start playing and the terminal menu with three options:
 
+  - Learn the rules;
 
-## Creating the Heroku app
+  - Play the game;
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+  - Quit;
 
-1. `heroku/python`
-2. `heroku/nodejs`
+  The user can manipulate the terminal menu with the arrow keys to choose an option and the enter key to confirm the option.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+  *Here the image goes*
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+  - **When the user chose "Learn the rules"**
 
-Connect your GitHub repository and deploy as normal.
+  The user will see the main rules of the game which are required to be followed.
+  Below the rules user can find the main menu where he or she may chose another option.
 
-## Constraints
+  *Here the image goes*
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+  - **When the user chose "Play the game"**
 
------
-Happy coding!
+  The user will be asked to type words according to the parts of speech. The user is allowed to use compound words to make the user's experience more fascinating.
+  When all words are typed, user will receive the whole story based on the key words which he or she typed before.
+  Below the story user can find the main menu where he or she may read the rules again, or play another game, or quit the program.
+
+  *Here the image goes*
+
+  - **When the user chose "Quit"**
+
+  The program will be stopped immediately.
+
+  *Here the image goes*
+
+</details>
+
