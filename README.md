@@ -213,3 +213,21 @@ The validator returned errors ragarding the length of the lines in madlib format
 
 ![Python Validator](documentation/validator_pep_8.png)
 
+
+---
+
+## Deployment
+
+
+
+
+---
+## Credits
+
+- List of Uncountable Nouns was made based in the [7ESL](https://7esl.com/uncountable-nouns/).
+- dictionary for idioms were made out of the tables published by [EF](https://www.ef.edu/english-resources/english-idioms/).
+- Colour formatting: [Colorama](https://pypi.org/project/colorama/).
+- Terminal menu: [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/).
+- Pluralizing and transforming verb into past time: [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) and [NLTK Package](https://www.nltk.org/)
+
+
