@@ -66,3 +66,16 @@ Users can quickly learn the rules of the game and type any words according to th
 
 </details>
 
+
+## Technologies Used
+
+### Languages:
+
+- [Python 3.8.5](https://www.python.org/downloads/release/python-385/): used to anchor the project and direct all application behavior
+
+- [JavaScript](https://www.javascript.com/): used to provide the start script needed to run the Code Institute mock terminal in the browser
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) used to construct the elements involved in building the mock terminal in the browser
+
+
+
