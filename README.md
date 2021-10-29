@@ -118,4 +118,42 @@ The flowchart represent the logic of the application:
 - [Draw.io](https://www.lucidchart.com/) was used to make flowchart for the README file.
 
 
+--
 
+### Bugs
+
++ **Solved bugs**
+
+
+1. The function ```choosing_article(word)``` did not give the correct article if the nout was uncountable.
+
+    - *Solutions:* rewrote function with using args; rather than checking only the beginning of the word, it checks all arguments and presents the correct  article
+     ```python
+    def choosing_article(*words):
+        """
+        Checks which article to use before the word and place the article before it
+        """
+        # Checks if the last word is countable.
+        #If it is uncountable, returns all words
+        if words[-1] in uncountable_nouns:
+            return ' '.join(words)
+        else:
+            # Checks if the word starts with a vowel, adds 'an' before the word
+            if words[0][0] in dictionary_letters['vowels']:
+                return 'an ' + ' '.join(words)
+            # Otherwise, adds 'a' before the word
+            else: 
+                return 'a ' + ' '.join(words)
+      ```
+
+1. The audio played '/' as "slash" for the words that had two spelling variations.
+        
+    - *Solution:* Add ```replace();``` method with two parameters ```currentWord.replace('/', 'or');```to the speakFunction().
+
+1. 
+
++ **Unsolved bugs**
+
+    - None.
+
+---
