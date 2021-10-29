@@ -202,4 +202,14 @@ The flowchart represent the logic of the application:
 
 ## Testing
 
+The program was tested constantly during its development process.
+It was also tested by other users in order to spot possible grammatical mistakes which code may present.
+
+### Validators
+
+Valentin Bryukhanov's [online validation tool](http://pep8online.com/checkresult) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into validator.
+
+The validator returned errors ragarding the length of the lines in madlib formatted string: "E501: line too long" 
+
+![Python Validator](documentation/validator_pep_8.png)
 
