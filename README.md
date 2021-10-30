@@ -218,7 +218,32 @@ The validator returned errors ragarding the length of the lines in madlib format
 
 ## Deployment
 
+### To deploy the project as an application that can be **run locally**:
 
+*Note:*
+  1. This project requires you to have Python installed on your local PC.
+  1. You will also need pip installed to allow installation of modules the application uses.
+
+Create a local copy of the GitHub repository, by following one of the 2 processes below:
+
+- Download ZIP file:
+  1. Go to the [GitHub Repo page](https://github.com/IuliiaKonovalova/madlib_with_python).
+  1. Click the Code button and download the ZIP file containing the project.
+  1. Extract the ZIP file to a location on your PC.
+
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the command git clone https://github.com/IuliiaKonovalova/madlib_with_python.git
+  1. Install Python module dependencies:
+     
+      1. Open a terminal to the folder you have copied the code to.
+      1. Run the command pip install -r requirements.txt
+      1. *Note:* If you are located in China, you may need keep the following code and import statements:
+
+    ```python
+    nltk.set_proxy('127.0.0.1:41091')
+    nltk.download('wordnet')
+    ```
 
 
 ---
