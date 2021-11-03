@@ -116,7 +116,8 @@ def verb_infinitive(verb):
     elif verb[-1] == 'e':
         infinitive_verb = verb[:-1] + 'ing'
 
-    #  Checks if the verb ends vowel and consonant, adds 1 more consonant and 'ing'
+    # Checks if the verb ends vowel and consonant
+    # Adds 1 more consonant and 'ing'
     elif (len(verb) > 2 and
             verb[-3] in dictionary_letters['consonant'] and
             verb[-2] in dictionary_letters['vowels'] and
@@ -193,11 +194,10 @@ def random_idiom():
     meanings.append(main_meaning)
     # Add 3 more random meanings to the list of meanings
     while len(meanings) != 4:
-      mean = random.choice(shuffle_meanings)
-      # Check whether the meaning haven't been used already
-      if mean not in meanings:
-        meanings.append(mean)      
-        
+        mean = random.choice(shuffle_meanings)
+        # Check whether the meaning haven't been used already
+        if mean not in meanings:
+            meanings.append(mean)
     random.shuffle(meanings)
     # Create nested list with idiom and its meaning, plus 3 random meanings
     main_list = [shuffle_idioms[0], meanings]
@@ -241,21 +241,30 @@ def draw_holes(mean):
     """
     height = 7
     length = 21
-
+    # Drawing the upper part of the image
     sth1 = '*' * length
     list1 = []
     for i in range(1, height, 2):
         sth2 = (i * (' ')).center(length, '*')
         list1.append(sth2)
-
+    # Drawing the center part of the image
     sth3 = "     ".upper().center(length, '*')
-
+    # Drawing the lower part of the image
     list2 = []
     for j in range(height-2, -1, -2):
         sth4 = (j * (' ')).center(length, '*')
         list2.append(sth4)
-
-    return f'{Fore.YELLOW}{sth1}\n    {list1[0]}\n    {list1[1]}\n    {list1[2]}\n    {sth3} {Fore.RED}{mean}\n    {Fore.YELLOW}{list2[0]}\n    {list2[1]}\n    {list2[2]}\n    {sth1}{Fore.RESET}'
+    return f'''{Fore.YELLOW}{sth1}
+{sth1}
+{list1[0]}
+{list1[1]}
+{list1[2]}
+{sth3} {Fore.RED}{mean}
+{Fore.YELLOW}{list2[0]}
+{list2[1]}
+{list2[2]}
+{sth1}
+{sth1}{Fore.RESET}'''
 
 
 def main_madlib():
@@ -497,6 +506,11 @@ def main():
         options_index = main_menu.show()
         options_choice = options[options_index]
         if options_choice == '3. Quit':
+            print(f'''
+            I hope you had some fun!\n
+            Thanks for using this app!\n
+            Hope to use this app soon
+            ''')
             quitting = True
         elif options_choice == '1. Learn the rules':
             show_the_rules()
