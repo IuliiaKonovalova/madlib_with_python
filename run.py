@@ -191,9 +191,12 @@ def random_idiom():
     main_meaning = idioms_dictionary[shuffle_idioms[0]]
     meanings.append(main_meaning)
     # Add 3 more random meanings to the list of meanings
-    for mean in range(4):
-        mean = random.choice(shuffle_meanings)
-        meanings.append(mean)
+    while len(meanings) != 4:
+      mean = random.choice(shuffle_meanings)
+      # Check whether the meaning haven't been used already
+      if mean not in meanings:
+        meanings.append(mean)      
+        
     random.shuffle(meanings)
     # Create nested list with idiom and its meaning, plus 3 random meanings
     main_list = [shuffle_idioms[0], meanings]
