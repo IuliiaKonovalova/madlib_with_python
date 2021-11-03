@@ -193,7 +193,7 @@ The flowchart represent the logic of the application:
 
 + **Unsolved bugs**
 
-    - The pattern.en package does not pluralize all words correctly even if their plural.
+    - The pattern.en package does not pluralize all words correctly even if they are plural.
 
       - For example: word 'bus' was pluralized as 'buss'.
 
