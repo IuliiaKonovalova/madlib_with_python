@@ -347,7 +347,7 @@ def main_madlib():
     #     verb4 = input('Type a verb: ')
     # Madlib formatted stringbig
 
-    madlib = f'''
+    madlib_1 = f'''
 {Style.BRIGHT}
 {choose_article(adj1).title()} {noun1} {conjugate(verb1, tense = PAST)}
 and went to {choose_article(adj2, noun2)}.
@@ -511,7 +511,7 @@ The {plural_noun(noun7)} with spears stepped forward and grabbed our travelers.
 They were dragging them through endless {color_adj2} tunnel.
 
     '''
-    print(madlib)
+    print(madlib_1)
 
 
 def show_the_rules():
@@ -533,9 +533,19 @@ def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     # Shows welcoming message
     print(f'''
-    {Fore.GREEN}Welcome to {Fore.YELLOW}Another Madlib Game!
+{Fore.GREEN}Welcome to {Fore.YELLOW}Another Madlib Game!
     ''')
-    # Presents options for the user
+    user_name = ''
+    # Ask user's name
+    while len(user_name) < 2:
+        user_name = input('Please enter your name: ')
+    print(f'''
+{Fore.GREEN}
+Greeting to you,{Fore.YELLOW}{user_name}{Fore.GREEN}!
+I hope you are doing well!
+Please, pick an option in the {Fore.YELLOW}menu!
+    ''')
+    sleep(1)
     options = ['1. Learn the rules', '2. Start the game', '3. Quit']
     main_menu = TerminalMenu(options)
     quitting = False
@@ -544,12 +554,14 @@ def main():
         options_choice = options[options_index]
         if options_choice == '3. Quit':
             print(f'''
-I hope you had some fun!\n
-Thanks for using this app!\n
-Hope to use this app soon
+{Fore.GREEN}
+I hope you had some fun, {Fore.YELLOW}{user_name}{Fore.GREEN}!
+Thanks for using this app!
+See you soon here, {Fore.YELLOW}{user_name}{Fore.GREEN}!
             ''')
             quitting = True
         elif options_choice == '1. Learn the rules':
+
             show_the_rules()
         else:
             main_madlib()
