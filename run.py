@@ -318,9 +318,11 @@ def main_madlib():
 
     madlib = f'''
     {Style.BRIGHT}
-    {choosing_article(adj1).capitalize()} {noun1} {conjugate(verb1, tense = PAST)} and went to {choosing_article(adj2, noun2)}.
+    {choosing_article(adj1).capitalize()} {noun1} {conjugate(verb1, tense = PAST)} and
+    went to {choosing_article(adj2, noun2)}.
     {formatting_pronoun(noun1).capitalize()} noticed {famous_person.title()} {verb_infinitive(verb2)}.
-    {choosing_article(noun1).capitalize()} and {famous_person.title()} decided to {verb3} and have {choosing_article(size_adjective1, color_adjective1, noun3)} together.
+    {choosing_article(noun1).capitalize()} and {famous_person.title()} decided to {verb3} and
+    have {choosing_article(size_adjective1, color_adjective1, noun3)} together.
     {Fore.BLUE}
     "It will cost an arm and a leg!"{Fore.WHITE} - said the {noun1}.
     {Fore.YELLOW}
@@ -328,20 +330,25 @@ def main_madlib():
     {Fore.BLUE}
     "As you wish, {famous_person.title()}. You see, I am just a poor {noun1}...
     So I have only {plural_noun(noun5)}.
-    If you want to share {choosing_a_quantifier(noun4)} {plural_noun(noun4)}, let's get it!"{Fore.WHITE} - said the {noun1}.
+    If you want to share {choosing_a_quantifier(noun4)} {plural_noun(noun4)},
+    let's get it!"{Fore.WHITE} - said the {noun1}.
 
     And they started walking towards {choosing_article(size_adjective2, color_adjective2, noun6)}.
-    It was already night when {famous_person.title()} noticed {choosing_article(size_adjective2, noun6)}.
+    It was already night when {famous_person.title()} noticed
+    {choosing_article(size_adjective2, noun6)} on the horizon.
     {Fore.BLUE}
-    "Can you see it? We are here!"{Fore.WHITE} - said {famous_person.title()} while pointing at the {noun6}.
+    "Can you see it? We are here!"{Fore.WHITE}
+    - said {famous_person.title()} while pointing at the {noun6}.
     {Fore.BLUE}
     "Oh, yes! But look at this old {noun7} in the bushes!"{Fore.WHITE} - says the {noun1}.
 
     The old {noun7} started walking slowly towards {famous_person.title()} and the {noun1}.
     Then, they saw that {formatting_pronoun(noun7)} was carrying a golden coin.
-    As soon as {formatting_pronoun(noun7)} reached our travelers, {formatting_pronoun(noun7)} started {verb_infinitive(verb4)} and handed out that golden coin to them and left silently.
+    As soon as {formatting_pronoun(noun7)} reached our travelers, {formatting_pronoun(noun7)}
+    started {verb_infinitive(verb4)} and handed out that golden coin to them and left silently.
     {famous_person.title()} looked at the coin...
-    There were several words colored in {color_adjective2} and a big {color_adjective2} rose drawn under them.
+    There were several words colored in {color_adjective2} and
+    a big {color_adjective2} rose drawn under them.
 
     {Fore.BLUE}"What is written there?"{Fore.WHITE} - asked the {noun1}.
 
@@ -349,23 +356,31 @@ def main_madlib():
 
     {Fore.YELLOW}"That's strange..."{Fore.WHITE} - {famous_person.title()} added.
 
-    {Fore.BLUE}"Why the text and the rose on the coin are {color_adjective2}?"{Fore.WHITE} - pondered the {adj1} {noun1}.
+    {Fore.BLUE}"Why the text and the rose on the coin are {color_adjective2}?"
+    {Fore.WHITE} - pondered the {adj1} {noun1}.
 
-    {Fore.YELLOW}"Maybe because the {size_adjective2} {noun6} is {color_adjective2}?"{Fore.WHITE} - {famous_person.title()} replied to {formatting_personal_pronoun(noun1)}.
+    {Fore.YELLOW}"Maybe because the {size_adjective2} {noun6} is {color_adjective2}?"
+    {Fore.WHITE} - {famous_person.title()} replied to {formatting_personal_pronoun(noun1)}.
 
-    As soon as they got closer to the {size_adjective2} {color_adjective2} {noun6}, the {noun1} yelled:
+    As soon as they got closer to the {size_adjective2} {color_adjective2} {noun6},
+    the {noun1} yelled and started {verb_infinitive(verb1)}:
 
     {Fore.BLUE}"That's it!"
 
-    {Fore.WHITE}On the front side of the {size_adjective2} {color_adjective2} {noun6} were a picture of a small version of {choosing_article(size_adjective2, color_adjective2, noun6)} and a plate with 4 holes with sentences near them.
+    {Fore.WHITE}On the front side of the {size_adjective2} {color_adjective2} {noun6} were
+    a picture of a small version of {choosing_article(size_adjective2, color_adjective2, noun6)}
+    and a plate with 4 holes with sentences near them.
+
     {draw_holes(idioms_list[1][0])}
     {draw_holes(idioms_list[1][1])}
     {draw_holes(idioms_list[1][2])}
     {draw_holes(idioms_list[1][3])}
 
-    {Fore.YELLOW}"As I've got it, we just need to {verb4} and throw our coin into the right hole."{Fore.WHITE} - said {famous_person.title()}.
+    {Fore.YELLOW}"As I've got it, we just need to {verb4} and throw our coin into the right hole."
+    {Fore.WHITE} - said {famous_person.title()}.
 
-    {Fore.BLUE}"Why do we need to {verb4} before throwing this coin?"{Fore.WHITE} - asked the {adj1} {noun1}.
+    {Fore.BLUE}"Why do we need to {verb4} before throwing this coin?"
+    {Fore.WHITE} - asked the {adj1} {noun1}.
 
     {Fore.YELLOW}"That's obvious!
     Because the old {noun7} was {verb_infinitive(verb4)}!"
@@ -388,8 +403,10 @@ def main_madlib():
     Let me think...
     If I were an old {noun7}, what would I choose..."
 
-    {Fore.WHITE}After pondering for an hour, {famous_person.title()} took a coin and through it into the hole with the sentence {Fore.RED}"{idioms_dictionary.get(idioms_list[0])}"{Fore.WHITE}.
-    As soon as the coin disappeared in the hole, the ground opened up under them and swallowed them literally.
+    {Fore.WHITE}After pondering for an hour, {famous_person.title()} took a coin and through it
+    into the hole with the sentence {Fore.RED}"{idioms_dictionary.get(idioms_list[0])}"{Fore.WHITE}.
+    As soon as the coin disappeared in the hole, the wind blew and
+    the ground opened up under them and swallowed them literally.
     They were falling down to nowhere...
     no light, no even a soul, just darkness everywhere...
     Eventually, the reached the ground.
@@ -398,7 +415,8 @@ def main_madlib():
     {Fore.BLUE}"Why all of this is happenning to us?"{Fore.WHITE} - yelled the already terrified {noun1}.
 
     {Fore.YELLOW}"I sincerely can't get my head around this as well!
-    It might be all about {choosing_article(size_adjective1, color_adjective1, noun3)}..."{Fore.WHITE} - replied {famous_person.title()}.
+    It might be all about {choosing_article(size_adjective1, color_adjective1, noun3)}..."
+    {Fore.WHITE} - replied {famous_person.title()}.
 
     {Fore.BLUE}"Yeah!
     I heard the the quality of the {size_adjective1} {color_adjective1} {noun3} is marvelous!"{Fore.WHITE}.
@@ -419,9 +437,11 @@ def main_madlib():
 
     {Fore.YELLOW}"Ok, let's make a deal!
     You see, I am in possession of lots of {plural_noun(noun4)}!
-    So I will give you half of my fortune if you let us go with {choosing_article(size_adjective1, color_adjective1, noun3)}"
+    So I will give you half of my fortune if you simply let us go
+    with {choosing_article(size_adjective1, color_adjective1, noun3)}"
 
-    {Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {plural_noun(noun7)} responded - {Fore.RED}Your {plural_noun(noun4)} {choose_correct_form_be(noun4)} nothing!
+    {Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {plural_noun(noun7)} responded
+    - {Fore.RED}Your {plural_noun(noun4)} {choose_correct_form_be(noun4)} nothing!
     But you two stole the golden coin!"
 
     {Fore.BLUE}"Excuse me, sir"{Fore.WHITE} - mumbled {noun1} - {Fore.BLUE}"That's not true!
@@ -433,7 +453,8 @@ def main_madlib():
     {Fore.BLUE}"What thing? We did nothing!
     We just wanted to have {choosing_article(size_adjective1, color_adjective1, noun3)} together!"
 
-    {Fore.RED}"You {conjugate(verb4, tense = PAST)} on perpose!"{Fore.WHITE} - the old {noun7} turned to the old {plural_noun(noun7)} who were holding spears.
+    {Fore.RED}"You {conjugate(verb4, tense = PAST)} on perpose!"{Fore.WHITE}
+    - the old {noun7} turned to the old {plural_noun(noun7)} who were holding spears.
     {Fore.RED}"Put them in prison! Now!".
 
     {Fore.WHITE}The {plural_noun(noun7)} with spears stepped forward and grabbed our travelers.
