@@ -2,6 +2,7 @@ import os
 import random
 from colorama import Fore, Style
 from simple_term_menu import TerminalMenu
+from time import sleep
 import nltk
 from pattern.en import pluralize, conjugate, PAST
 from gender_words import dictionary_gender
