@@ -29,6 +29,24 @@ Users can quickly learn the rules of the game and type any words according to th
 </details>
 
 ---
+## User Stories
+
+<details>
+  <summary>Click to expand!</summary>
+### First Time Visitor Goals:
+
+* As a First Time Visitor, I want to easily understand the main purpose of the program, so I can learn more about this program.
+* As a First Time Visitor, I want to be able to easily navigate through the program, so I can find the content.
+* As a First Time Visitor, I want to find the program useful for myself, so I can fulfill my expectations.
+* As a First Time Visitor, I want to see different colors of text, so I can easily read the story.
+
+### Frequent Visitor Goals:
+* As a Frequent User, I want to be able to use different words for the inputs, so I can receive various experience.
+* As a Frequent User, I want to the stories be readable all the time, so I can read stories without difficulties. 
+
+</details>
+
+---
 
 ## Features
 
@@ -223,8 +241,11 @@ The validator returned errors ragarding the length of the lines in madlib format
 ### To deploy the project as an application that can be **run locally**:
 
 *Note:*
-  1. This project requires you to have Python installed on your local PC.
+  1. This project requires you to have Python installed on your local PC:
+  - `sudo apt install python3.7`
+
   1. You will also need pip installed to allow installation of modules the application uses.
+  - `sudo apt install python3-pip`
 
 Create a local copy of the GitHub repository, by following one of the 2 processes below:
 
@@ -235,17 +256,16 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
 
 - Clone the repository:
   1. Open a folder on your computer with the terminal.
-  1. Run the command git clone https://github.com/IuliiaKonovalova/madlib_with_python.git
+  1. Run the following command
+  - `git clone https://github.com/IuliiaKonovalova/madlib_with_python.git`
+
   1. Install Python module dependencies:
      
       1. Open a terminal to the folder you have copied the code to.
       1. Run the command pip install -r requirements.txt
-      1. *Note:* If you are located in China, you may need keep the following code and import statements:
+        - `pip3 install -r requirements.txt`
 
-    ```python
-    nltk.set_proxy('127.0.0.1:41091')
-    nltk.download('wordnet')
-    ```
+
 
 
 ---
