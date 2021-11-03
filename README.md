@@ -2,7 +2,7 @@
 
 ![Responsive Mockup](documentation/responsive_mockup.png)
 
-*Here the link goes*
+*The link to [the Maddest Madlib](https://the-maddest-madlib.herokuapp.com/)*
 
 The Maddest Madlib is a Python terminal project whose primary purpose is to boost users' moods and provide various experiences.
 
@@ -24,7 +24,7 @@ Users can quickly learn the rules of the game and type any words according to th
   1. Try to enter different words to have even more fun.
   1. As soon as you are sick and tired of the game choose "Quit" and **send** the link of this program to your friends!
 
-  *Here the link goes*
+  Link to the game: *https://the-maddest-madlib.herokuapp.com*
 
 </details>
 
@@ -238,8 +238,8 @@ The validator returned errors ragarding the length of the lines in madlib format
 
 ## Deployment
 
-- The site was deployed to [Heroku](https://dashboard.heroku.com).
-
+- The program was deployed to [Heroku](https://dashboard.heroku.com).
+- The program can by reached by the [link](https://the-maddest-madlib.herokuapp.com/)
 ### To deploy the project as an application that can be **run locally**:
 
 *Note:*
