@@ -149,13 +149,13 @@ The flowchart represent the logic of the application:
 
 1. Conjugate function did not work due to the RunTimeError raised by Python.
 
-    - *Solutions:* add function wich runs the function at first raising this error and then passes this error.
+    - *Solutions:* add function which runs the function at first raising this error and then passes this error.
 
      ```python
     def run_the_time_error():
         """
         Prevent "RuntimeError: generator raised StopIteration"
-        The package has raised StopIteration that was missed in python earier versions.
+        The package has raised StopIteration that was missed in python earlier versions.
         Thus, it had worked before Python version 3.7 was introduced.
         Since the package has not been updates since August 2018, it raises the error and stops the app.
         "PEP 479 is enabled for all code in Python >= 3.7, meaning that StopIteration exceptions raised
@@ -207,7 +207,7 @@ It was also tested by other users in order to spot possible grammatical mistakes
 
 ### Validators
 
-Valentin Bryukhanov's [online validation tool](http://pep8online.com/checkresult) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into validator.
+Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into validator.
 
 The validator returned errors ragarding the length of the lines in madlib formatted string: "E501: line too long" 
 
