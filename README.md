@@ -1,5 +1,7 @@
 # The Maddest Madlib
 
+![Responsive Mockup](documentation/responsive_mockup.png)
+
 *Here the link goes*
 
 The Maddest Madlib is a Python terminal project whose primary purpose is to boost users' moods and provide various experiences.
