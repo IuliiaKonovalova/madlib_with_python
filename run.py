@@ -349,10 +349,10 @@ def main_madlib():
 
     madlib = f'''
 {Style.BRIGHT}
-{choose_article(adj1).capitalize()} {noun1} {conjugate(verb1, tense = PAST)}
+{choose_article(adj1).title()} {noun1} {conjugate(verb1, tense = PAST)}
 and went to {choose_article(adj2, noun2)}.
-{format_pronoun(noun1).capitalize()} noticed {famous_person.title()} {verb_infinitive(verb2)}.
-{choose_article(noun1).capitalize()} and {famous_person.title()} decided to {verb3}
+{format_pronoun(noun1).title()} noticed {famous_person.title()} {verb_infinitive(verb2)}.
+{choose_article(noun1).title()} and {famous_person.title()} decided to {verb3}
 and have {choose_article(size_adj1, color_adj1, noun3)} together.
 {Fore.BLUE}
 "It will cost an arm and a leg!"{Fore.WHITE} - said the {noun1}.
@@ -418,7 +418,7 @@ we just need to {verb4} and throw our coin into the right hole."
 
 {Fore.BLUE}
 "Why do we need to {verb4} before throwing this coin?"
-{Fore.WHITE} - asked the {adj1} {noun1}.
+{Fore.WHITE}- asked the {adj1} {noun1}.
 {Fore.YELLOW}
 "That's obvious!
 Because the old {noun7} was {verb_infinitive(verb4)}!"
@@ -429,7 +429,7 @@ Because the old {noun7} was {verb_infinitive(verb4)}!"
 {Fore.BLUE}
 "Look! I am just a poor {noun1}!
 I have only {plural_noun(noun5)}! No brain!
-So it is you, {famous_person.title()}, who have to make a decision!"
+So it is you, {famous_person.title()}, who has to make a decision!"
 {Fore.YELLOW}
 "Why me?"
 {Fore.BLUE}
@@ -443,7 +443,7 @@ Let me think...
 If I were an old {noun7}, what would I choose..."
 {Fore.WHITE}
 After pondering for an hour,
-{famous_person.title()} took a coin and through it
+{famous_person.title()} took a coin and threw it
 into the hole with the sentence:
 {Fore.RED}
 "{idioms_dictionary.get(idioms_list[0])}"{Fore.WHITE}.
@@ -460,7 +460,7 @@ As luck would have it, they survived!
 "I sincerely can't get my head around this as well!
 It might be all about...
 {choose_article(size_adj1, color_adj1, noun3)}..."
-{Fore.WHITE} - replied {famous_person.title()}.
+{Fore.WHITE}- replied {famous_person.title()}.
 {Fore.BLUE}
 "Yeah!
 I heard the the quality of the {size_adj1} {color_adj1} {noun3}
@@ -487,7 +487,7 @@ You see, I am in possession of lots of {plural_noun(noun4)}!
 So I will give you half of my fortune if you simply let us go
 with {choose_article(size_adj1, color_adj1, noun3)}"
 
-{Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {plural_noun(noun7)} responded
+{Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {noun7} responded
 - {Fore.RED}Your {plural_noun(noun4)} {choose_correct_form_be(noun4)} nothing!
 But you two stole the golden coin!"
 
@@ -502,8 +502,8 @@ But you did! Moreover, you also performed our thing!"
 "What thing? We did nothing! We just wanted to have
 {choose_article(size_adj1, color_adj1, noun3)} together!"
 {Fore.RED}
-"You {conjugate(verb4, tense = PAST)} on perpose!"
-{Fore.WHITE} - the old {noun7}
+"You {conjugate(verb4, tense = PAST)} on purpose!"
+{Fore.WHITE}- the old {noun7}
 turned to the old {plural_noun(noun7)} who were holding spears.
 {Fore.RED}"Put them in prison! Now!".
 {Fore.WHITE}
@@ -544,9 +544,9 @@ def main():
         options_choice = options[options_index]
         if options_choice == '3. Quit':
             print(f'''
-            I hope you had some fun!\n
-            Thanks for using this app!\n
-            Hope to use this app soon
+I hope you had some fun!\n
+Thanks for using this app!\n
+Hope to use this app soon
             ''')
             quitting = True
         elif options_choice == '1. Learn the rules':
