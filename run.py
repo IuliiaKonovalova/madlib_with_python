@@ -561,7 +561,11 @@ See you soon here, {Fore.YELLOW}{user_name}{Fore.GREEN}!
             ''')
             quitting = True
         elif options_choice == '1. Learn the rules':
-
+            print(f'''
+{Fore.YELLOW}{user_name}{Fore.GREEN},
+Please read the rules attentively and follow them precisely!
+            ''')
+            sleep(1)
             show_the_rules()
         else:
             main_madlib()
