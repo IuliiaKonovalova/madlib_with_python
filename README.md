@@ -238,11 +238,13 @@ The validator returned errors ragarding the length of the lines in madlib format
 
 ## Deployment
 
+- The site was deployed to [Heroku](https://dashboard.heroku.com).
+
 ### To deploy the project as an application that can be **run locally**:
 
 *Note:*
   1. This project requires you to have Python installed on your local PC:
-  - `sudo apt install python3.7`
+  - `sudo apt install python3`
 
   1. You will also need pip installed to allow installation of modules the application uses.
   - `sudo apt install python3-pip`
@@ -261,23 +263,82 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
 
   1. Install Python module dependencies:
      
-      1. Open a terminal to the folder you have copied the code to.
+      1. Navigate to the folder madlib_with_python by executing command:
+      - `cd madlib_with_python`
       1. Run the command pip install -r requirements.txt
         - `pip3 install -r requirements.txt`
-      1. *Note:* If you are located in  China ![China](https://www.countryflags.io/cn/flat/32.png), you may need to add the following code in order to be able to use nltk package.
+      1. *Note:* If you are located in China ![China](https://www.countryflags.io/cn/flat/32.png) or any other country with restricted internet access, you may need to add the following code in order to be able to use nltk package.
       
        - For example:
 
         ```python
         nltk.set_proxy('127.0.0.1:41091')
-        nltk.download('wordnet')
         ```
       - To set the proxy you need to open setting in preferred VPN, find Server address and HTTP/HTTPS Proxy Port joining them by colons as it is shown in the example above:
-      ![Settings Vpn](documentation/settings_vpn.png)
+      ![Settings VPN](documentation/settings_vpn.png)
 
       
+### To deploy the project to Heroku so it can be run as a remote web application:
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/IuliiaKonovalova/madlib_with_python.git`
 
+  1. Create your own GitHub repository to host the code.
+  1. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
 
+  1. Push the files to your repository with the following command:
+  `git push`
+  1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
+  1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+
+      - ![New Heroku App](documentation/new_heroku_app.png)
+
+  1. Go to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deploy_tab.png)
+
+      - ![Deployment Method](documentation/deployment_method.png)
+
+  1. Link your GitHub account and connect the application to the repository you created.
+
+      - ![Link GitHub account](documentation/link_to_github.png)
+
+  1. Go to the Settings tab:
+  
+      - ![Settings Tab](documentation/settings_tab.png)
+
+  1. Click "Add buildpack":
+
+      - ![Add Buildpack](documentation/add_buildpack.png)
+
+  1. Add the Python and Node.js buildpacks in the following order:
+
+      - ![Add Python and Node.js](documentation/add_python_and_node_js.png)
+
+  1. Click "Reveal Config Vars"
+
+      - ![Reveal Config Vars](documentation/reveal_config_vars.png)
+
+  1. Add 1 new Config Vars:
+      - Key: PORT Value: 8000
+      - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+
+  1. Go back to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deploy_tab.png)
+
+  1. Click "Deploy Branch":
+
+      - ![Deploy Branch](documentation/deploy_branch)
+
+      - Wait for the completion of the deployment.
+
+      - ![Deploying Branch](documentation/deploying_branch.png)
+
+  1. Click "Open app" to launch the application inside a web page.
+
+      - ![View Button](documentation/view_app.png)
 
 ---
 ## Credits
