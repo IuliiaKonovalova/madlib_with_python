@@ -275,7 +275,7 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
         nltk.set_proxy('127.0.0.1:41091')
         ```
       - To set the proxy you need to open setting in preferred VPN, find Server address and HTTP/HTTPS Proxy Port joining them by colons as it is shown in the example above:
-      ![Settings VPN](documentation/settings_vpn.png)
+      ![Settings VPN](documentation/deployment/settings_vpn.png)
 
       
 ### To deploy the project to Heroku so it can be run as a remote web application:
@@ -292,33 +292,33 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
   1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
   1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
 
-      - ![New Heroku App](documentation/new_heroku_app.png)
+      - ![New Heroku App](documentation/deployment/new_heroku_app.png)
 
   1. Go to the Deploy tab:
 
-      - ![Deploy Tab](documentation/deploy_tab.png)
+      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
 
-      - ![Deployment Method](documentation/deployment_method.png)
+      - ![Deployment Method](documentation/deployment/deployment_method.png)
 
   1. Link your GitHub account and connect the application to the repository you created.
 
-      - ![Link GitHub account](documentation/link_to_github.png)
+      - ![Link GitHub account](documentation/deployment/link_to_github.png)
 
   1. Go to the Settings tab:
   
-      - ![Settings Tab](documentation/settings_tab.png)
+      - ![Settings Tab](documentation/deployment/settings_tab.png)
 
   1. Click "Add buildpack":
 
-      - ![Add Buildpack](documentation/add_buildpack.png)
+      - ![Add Buildpack](documentation/deployment/add_buildpack.png)
 
   1. Add the Python and Node.js buildpacks in the following order:
 
-      - ![Add Python and Node.js](documentation/add_python_and_node_js.png)
+      - ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
 
   1. Click "Reveal Config Vars"
 
-      - ![Reveal Config Vars](documentation/reveal_config_vars.png)
+      - ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
 
   1. Add 1 new Config Vars:
       - Key: PORT Value: 8000
@@ -326,19 +326,19 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
 
   1. Go back to the Deploy tab:
 
-      - ![Deploy Tab](documentation/deploy_tab.png)
+      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
 
   1. Click "Deploy Branch":
 
-      - ![Deploy Branch](documentation/deploy_branch)
+      - ![Deploy Branch](documentation/deployment/deploy_branch.png)
 
       - Wait for the completion of the deployment.
 
-      - ![Deploying Branch](documentation/deploying_branch.png)
+      - ![Deploying Branch](documentation/deployment/deploying_branch.png)
 
   1. Click "Open app" to launch the application inside a web page.
 
-      - ![View Button](documentation/view_app.png)
+      - ![View Button](documentation/deployment/view_app.png)
 
 ---
 ## Credits
