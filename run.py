@@ -331,7 +331,7 @@ def main_madlib():
     # Madlib formatted string
 
     madlib_1 = f'''
-{Style.BRIGHT}
+{Style.BRIGHT}{Fore.WHITE}
 {choose_article(adj1).capitalize()} {noun1}
 {conjugate(verb1, tense = PAST)} and went to {choose_article(adj2, noun2)}.
 {format_pronoun(noun1).title()} kept {verb_infinitive(verb1)} slowly
@@ -495,7 +495,8 @@ You have to know who I am! Let us go!"
 You see, I am in possession of lots of {plural_noun(noun4)}!
 So I will give you half of my fortune if you simply let us go
 with {choose_article(size_adj1, color_adj1, noun3)}"
-{Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {noun7} responded -
+{Fore.RED}
+"Pathetic!"{Fore.WHITE} - the same old {noun7} responded -
 {Fore.RED}Your {plural_noun(noun4)} {choose_correct_form_be(noun4)} nothing!
 But you two stole the golden coin!"
     '''
@@ -649,64 +650,68 @@ arguing with the army of old {plural_noun(noun7)},
 getting in the prison,
 and giving out all the {plural_noun(noun5)} and {plural_noun(noun4)} away.
     '''
-
+    print(f'''
+{Fore.GREEN}Be ready to read an amazing story...
+    ''')
+    sleep(2)
     print(madlib_1)
-    # sleep(7)
+    sleep(7)
     print(madlib_2)
-    # sleep(10)
+    sleep(10)
     print(madlib_3)
-    # sleep(10)
+    sleep(10)
     print(madlib_4)
-    # sleep(10)
+    sleep(10)
     print(madlib_5)
-    # sleep(10)
+    sleep(10)
     print(madlib_6)
-    # sleep(8)
+    sleep(8)
     print(madlib_7)
-    # sleep(2)
+    sleep(2)
     print(madlib_8)
-    # sleep(2)
+    sleep(2)
     print(madlib_9)
-    # sleep(2)
+    sleep(2)
     print(madlib_10)
-    # sleep(2)
+    sleep(2)
     print(madlib_11)
-    # sleep(3)
+    sleep(3)
     print(madlib_12)
-    # sleep(8)
+    sleep(8)
     print(madlib_13)
-    # sleep(8)
+    sleep(8)
     print(madlib_14)
-    # sleep(8)
+    sleep(8)
     print(madlib_15)
-    # sleep(20)
+    sleep(20)
     print(madlib_16)
-    # sleep(15)
+    sleep(15)
     print(madlib_17)
-    # sleep(20)
+    sleep(15)
     print(madlib_18)
-    # sleep(8)
+    sleep(8)
     print(madlib_19)
-    # sleep(10)
+    sleep(10)
     print(madlib_20)
-    # sleep(15)
+    sleep(15)
     print(madlib_21)
-    # sleep(10)
+    sleep(10)
     print(madlib_22)
-    # sleep(12)
+    sleep(12)
     print(madlib_23)
-    # sleep(15)
+    sleep(15)
     print(madlib_24)
-    # sleep(25)
+    sleep(20)
     print(madlib_25)
-    # sleep(20)
+    sleep(15)
     print(madlib_26)
-    # sleep(16)
+    sleep(15)
     print(madlib_27)
-    # sleep(20)
+    sleep(15)
     print(madlib_28)
-    # sleep(20)
+    sleep(15)
     print(madlib_29)
+    sleep(20)
 
 
 def show_the_rules():
@@ -754,6 +759,10 @@ Please, pick an option in the {Fore.YELLOW}menu!
 I hope you had some fun, {Fore.YELLOW}{user_name}{Fore.GREEN}!
 Thanks for using this app!
 See you soon here, {Fore.YELLOW}{user_name}{Fore.GREEN}!
+{Style.BRIGHT}
+{Fore.RED}P.S.
+{Fore.GREEN}The author of the program was sober
+at all stages of creating this story.
             ''')
             quitting = True
         elif options_choice == '1. Learn the rules':
@@ -764,6 +773,13 @@ Please read the rules attentively and follow them precisely!
             sleep(1)
             show_the_rules()
         else:
+            print(f'''
+{Fore.GREEN}Be ready to type words...
+            ''')
+            sleep(2)
             main_madlib()
+            print(f'''
+{Fore.GREEN}The end.{Fore.WHITE}{Style.RESET_ALL}
+            ''')
 
 main()
