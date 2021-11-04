@@ -121,7 +121,8 @@ def verb_infinitive(verb):
     elif (len(verb) > 2 and
             verb[-3] in dictionary_letters['consonant'] and
             verb[-2] in dictionary_letters['vowels'] and
-            verb[-1] in dictionary_letters['consonant']):
+            verb[-1] in dictionary_letters['consonant'] and
+            verb[-1] != 'w'):
         # Since all three conditions are true, add 1 more consonant and 'ing'
         infinitive_verb = verb + verb[-1] + 'ing'
 
@@ -351,7 +352,8 @@ def main_madlib():
 {Style.BRIGHT}
 {choose_article(adj1).title()} {noun1} {conjugate(verb1, tense = PAST)}
 and went to {choose_article(adj2, noun2)}.
-{format_pronoun(noun1).title()} noticed {famous_person.title()} {verb_infinitive(verb2)}.
+{format_pronoun(noun1).title()} kept {verb_infinitive(verb1)} and noticed
+{famous_person.title()} {verb_infinitive(verb2)}.
 {choose_article(noun1).title()} and {famous_person.title()} decided to {verb3}
 and have {choose_article(size_adj1, color_adj1, noun3)} together.
     '''
@@ -557,20 +559,17 @@ But you did! Moreover, you also performed our thing!"
 {choose_article(size_adj1, color_adj1, noun3)} together!"
     '''
     madlib_33 = f'''
-{Fore.RED}
-"You {conjugate(verb4, tense = PAST)} on purpose!"
+{Fore.RED}"You {conjugate(verb4, tense = PAST)} on purpose!"
 {Fore.WHITE}- the old {noun7}
 turned to the old {plural_noun(noun7)} who were holding spears.
 {Fore.RED}"Put them in prison! Now!".
-    '''
-    madlib_34 = f'''
 {Fore.WHITE}
 The {plural_noun(noun7)} with spears stepped forward and grabbed our travelers.
 They were dragging them through endless {color_adj2} tunnel.
     '''
-    madlib_35 = f'''
+    madlib_34 = f'''
 After some time they were kicked into a dark {color_adj2} prison cell.
-{noun1.capitalize()} and {famous_person.title()} kept silence  for a while.
+{noun1.capitalize()} and {famous_person.title()} kept silence for a while.
 {Fore.YELLOW}
 "What's in your mind, {noun1}?"
 {Fore.BLUE}
@@ -579,85 +578,128 @@ What's wring with you, {famous_person.title()}?
 You think that if you're famous and have a lot of {plural_noun(noun4)},
 you are allowed to say what ever you want?"
     '''
-    madlib_36 = f'''
-Then they herd some wishper...
+    madlib_35 = f'''
+{Fore.WHITE}Then they herd some wishper...
 {Fore.MAGENTA}"Hello there!" - {Fore.WHITE}said unfamiliar voice.
 Actually if was the {choose_article(adj2, noun2)}!
-But they will never guess for the whole their lives.
+But they will never guess about this {noun2}
+and {formatting_personal_pronoun(noun2)} plans.
+{Fore.MAGENTA}
+"Guys, I have something that might help you.
+But you have to do one thing in return...
+I'm pretty sure that you've got here because you just wanted
+to get {choose_article(size_adj1, color_adj1, noun3)}.
+Am I right?"
+    '''
+    madlib_36 = f'''
+{Fore.BLUE}"Yes, you are right! Unfortunately, {famous_person.title()}
+decided to break all rules and we've got here!
+Do you know how to get out?
+If you do, {famous_person.title()}'ll give you all of {plural_noun(noun4)}!"
+{Fore.YELLOW}
+"What are you talking about?
+All of the {plural_noun(noun4)} belongs to me!
+Only I can make a call about what to do with {plural_noun(noun4)}!"
+{Fore.BLUE}
+"Shut up!
+We're in the {color_adj2} prison of the {size_adj2} {color_adj2} {noun6}.
+In addition, there is an army of old {plural_noun(noun7)} around us!
+You are famous! You still can {verb2} and earn your {plural_noun(noun4)} back!
+I do remember you {conjugate(verb2, tense = PAST)} when I met you!
+Just do what this voice will say!"
+    '''
+    madlib_37 = f'''
+{Fore.WHITE}{famous_person.title()} nodded in agreement.
+{Fore.YELLOW}
+"Ok. We will do what ever it takes to get out of this prison and
+this {size_adj2} {color_adj2} {noun6}!
+Tell us what you want in return?"
+{Fore.MAGENTA}
+"You see I have some obligations.
+I have other {adj2} {plural_noun(noun2)}.
+I have to provide for {format_pronoun(noun2)}".
+I will give you a little mirror and tell how to use it.
+It will help you to escape from the old {plural_noun(noun7)}.
+But you have to give all that you have to my {plural_noun(noun2)}.
+{famous_person.title()}, you will give all your {plural_noun(noun4)}.
+And you, {adj1} {noun1}, will give all of your {plural_noun(noun5)}.
+Deal?"
     '''
 
     print(madlib_1)
-    sleep(7)
+    # sleep(7)
     print(madlib_2)
-    sleep(6)
+    # sleep(6)
     print(madlib_3)
-    sleep(9)
+    # sleep(9)
     print(madlib_4)
-    sleep(6)
+    # sleep(6)
     print(madlib_5)
-    sleep(5)
+    # sleep(5)
     print(madlib_6)
-    sleep(5)
+    # sleep(5)
     print(madlib_7)
-    sleep(12)
+    # sleep(12)
     print(madlib_8)
-    sleep(6)
+    # sleep(6)
     print(madlib_9)
-    sleep(6)
+    # sleep(6)
     print(madlib_10)
-    sleep(6)
+    # sleep(6)
     print(madlib_11)
-    sleep(8)
+    # sleep(8)
     print(madlib_12)
-    sleep(4)
+    # sleep(2)
     print(madlib_13)
-    sleep(4)
+    # sleep(2)
     print(madlib_14)
-    sleep(4)
+    # sleep(2)
     print(madlib_15)
-    sleep(4)
+    # sleep(2)
     print(madlib_16)
-    sleep(6)
+    # sleep(6)
     print(madlib_17)
-    sleep(10)
+    # sleep(10)
     print(madlib_18)
-    sleep(8)
+    # sleep(8)
     print(madlib_19)
-    sleep(6)
+    # sleep(6)
     print(madlib_20)
-    sleep(6)
+    # sleep(6)
     print(madlib_21)
-    sleep(6)
+    # sleep(6)
     print(madlib_22)
-    sleep(4)
+    # sleep(4)
     print(madlib_23)
-    sleep(15)
+    # sleep(15)
     print(madlib_24)
-    sleep(10)
+    # sleep(10)
     print(madlib_25)
-    sleep(6)
+    # sleep(6)
     print(madlib_26)
-    sleep(16)
+    # sleep(16)
     print(madlib_27)
-    sleep(6)
+    # sleep(6)
     print(madlib_28)
-    sleep(6)
+    # sleep(6)
     print(madlib_29)
-    sleep(8)
+    # sleep(8)
     print(madlib_30)
-    sleep(4)
+    # sleep(4)
     print(madlib_31)
-    sleep(6)
+    # sleep(6)
     print(madlib_32)
-    sleep(6)
+    # sleep(6)
     print(madlib_33)
-    sleep(6)
+    # sleep(6)
     print(madlib_34)
-    sleep(6)
+    # sleep(12)
     print(madlib_35)
-    sleep(12)
+    # sleep(8)
     print(madlib_36)
-    sleep(6  )
+    # sleep(20)
+    print(madlib_37)
+    # sleep(20)
 
 
 def show_the_rules():
