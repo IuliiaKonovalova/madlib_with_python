@@ -657,7 +657,7 @@ But they will never guess for the whole their lives.
     print(madlib_35)
     sleep(12)
     print(madlib_36)
-    sleep(6)
+    sleep(6  )
 
 
 def show_the_rules():
@@ -685,7 +685,7 @@ def main():
     user_name = ''
     # Ask user's name
     while len(user_name) < 2:
-        user_name = input('Please enter your name: ')
+        user_name = input('Please enter your name: ').title()
     print(f'''
 {Fore.GREEN}
 Greeting to you, {Fore.YELLOW}{user_name}{Fore.GREEN}!
