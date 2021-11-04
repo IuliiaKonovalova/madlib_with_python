@@ -8,54 +8,43 @@ The Maddest Madlib is a Python terminal project whose primary purpose is to boos
 
 Secondarily, it may help users to practice English grammar.
 
-Users can quickly learn the rules of the game and type any words according to the provided instructions. In the end, they will receive a story that includes words from the user's input which are modified according to the English grammatical rules as much as it is possible.
+Users can quickly learn the rules of the game and type any words according to the provided instructions. In the end, they will receive a story that includes all words from the user's input, which are modified according to the English grammatical rules as much as possible to fit in the story.
 
 ---
 
 ## How to play:
 
-<details>
-  <summary>Click to expand!</summary>
-
-  1. Open the link.
+  1. Click this *[link](https://the-maddest-madlib.herokuapp.com)* or copy this text: `https://the-maddest-madlib.herokuapp.com` and paste it in your browser's address bar.
+  1. As soon as the page is loaded, click 'RUN PROGRAM'.
+  1. Introduce yourself to the program.
   1. Learn the rules.
   1. Type the words according to the instructions.
-  1. Read the story after all and have some fun.
-  1. Try to enter different words to have even more fun.
-  1. As soon as you are sick and tired of the game choose "Quit" and **send** the link of this program to your friends!
+  1. Read the story gradually and have some fun.
+  1. Play one more time and try to enter different words to have even more fun.
+  1. As soon as you are sick and tired of the game, choose "Quit" and **send** the link to this program to your friends!
 
   Link to the game: *https://the-maddest-madlib.herokuapp.com*
 
-</details>
-
 ---
 ## User Stories
-
-<details>
-  <summary>Click to expand!</summary>
 ### First Time Visitor Goals:
 
-* As a First Time Visitor, I want to easily understand the main purpose of the program, so I can learn more about this program.
-* As a First Time Visitor, I want to be able to easily navigate through the program, so I can find the content.
-* As a First Time Visitor, I want to find the program useful for myself, so I can fulfill my expectations.
-* As a First Time Visitor, I want to see different colors of text, so I can easily read the story.
+* As a First Time Visitor, I want to quickly understand the program's primary purpose so that I can learn more about this program.
+* As a First Time Visitor, I want to navigate through the program easily so that I can find the content.
+* As a First Time Visitor, I want to find the program useful for myself so that I can fulfill my expectations.
+* As a First Time Visitor, I want to see different text colors so I can easily read the story.
 
 ### Frequent Visitor Goals:
-* As a Frequent User, I want to be able to use different words for the inputs, so I can receive various experience.
-* As a Frequent User, I want to the stories be readable all the time, so I can read stories without difficulties. 
-
-</details>
+* As a Frequent User, I want to be able to use different words for the inputs so that I can receive various experiences.
+* As a Frequent User, I want the stories to be readable all the time so that I can read stories without difficulties. 
 
 ---
 
 ## Features
-
-<details>
-  <summary>Click to expand!</summary>
   
   - **When the program is loaded**
 
-  The user can see a welcoming message which engage to start playing and the terminal menu with three options:
+  The user can see a welcoming message which engages to start playing and the terminal menu with three options:
 
   - Learn the rules;
 
@@ -63,14 +52,14 @@ Users can quickly learn the rules of the game and type any words according to th
 
   - Quit;
 
-  The user can manipulate the terminal menu with the arrow keys to choose an option and the enter key to confirm the option.
+  The user can manipulate the terminal menu with the arrow keys to choose an option and the enter key to confirm the choice.
 
   *Here the image goes*
 
   - **When the user chose "Learn the rules"**
 
   The user will see the main rules of the game which are required to be followed.
-  Below the rules user can find the main menu where he or she may chose another option.
+  Below the rules, the user can find the main menu where he or she may choose another option.
 
   *Here the image goes*
 
@@ -88,20 +77,14 @@ Users can quickly learn the rules of the game and type any words according to th
 
   *Here the image goes*
 
-</details>
-
 ---
 
 ## Flowchart
-
-<details>
-  <summary>Click to expand!</summary>
 
 The flowchart represent the logic of the application:
 
   ![Flash Card Page](documentation/flowchart_madlib.png)
 
-</details>
 
 
 ---
@@ -223,11 +206,11 @@ The flowchart represent the logic of the application:
 ## Testing
 
 The program was tested constantly during its development process.
-It was also tested by other users in order to spot possible grammatical mistakes which code may present.
+Other users also tested it in order to spot possible grammatical mistakes that code may present.
 
 ### Validators
 
-Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into validator.
+Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into the validator.
 
 No errors were found:
 
@@ -253,17 +236,17 @@ No errors were found:
 ## Deployment
 
 - The program was deployed to [Heroku](https://dashboard.heroku.com).
-- The program can by reached by the [link](https://the-maddest-madlib.herokuapp.com/)
+- The program can be reached by the [link](https://the-maddest-madlib.herokuapp.com/)
 ### To deploy the project as an application that can be **run locally**:
 
 *Note:*
   1. This project requires you to have Python installed on your local PC:
   - `sudo apt install python3`
 
-  1. You will also need pip installed to allow installation of modules the application uses.
+  1. You will also need pip installed to allow the installation of modules the application uses.
   - `sudo apt install python3-pip`
 
-Create a local copy of the GitHub repository, by following one of the 2 processes below:
+Create a local copy of the GitHub repository by following one of the two processes below:
 
 - Download ZIP file:
   1. Go to the [GitHub Repo page](https://github.com/IuliiaKonovalova/madlib_with_python).
@@ -277,18 +260,18 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
 
   1. Install Python module dependencies:
      
-      1. Navigate to the folder madlib_with_python by executing command:
+      1. Navigate to the folder madlib_with_python by executing the command:
       - `cd madlib_with_python`
       1. Run the command pip install -r requirements.txt
         - `pip3 install -r requirements.txt`
-      1. *Note:* If you are located in China ![China](https://www.countryflags.io/cn/flat/32.png) or any other country with restricted internet access, you may need to add the following code in order to be able to use nltk package.
+      1. *Note:* If you are located in China ![China](https://www.countryflags.io/cn/flat/32.png) or any other country with restricted internet access, you may need to add the following code in order to be able to use the nltk package.
       
        - For example:
 
         ```python
         nltk.set_proxy('127.0.0.1:41091')
         ```
-      - To set the proxy you need to open setting in preferred VPN, find Server address and HTTP/HTTPS Proxy Port joining them by colons as it is shown in the example above:
+      - To set the proxy, you need to open setting in preferred VPN, find Server address and HTTP/HTTPS Proxy Port joining them by colons as it is shown in the example above:
       ![Settings VPN](documentation/deployment/settings_vpn.png)
 
       
@@ -330,7 +313,7 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
 
       - ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
 
-  1. Click "Reveal Config Vars"
+  1. Click "Reveal Config Vars."
 
       - ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
 
@@ -357,8 +340,8 @@ Create a local copy of the GitHub repository, by following one of the 2 processe
 ---
 ## Credits
 
-- List of Uncountable Nouns was made based in the [7ESL](https://7esl.com/uncountable-nouns/).
-- dictionary for idioms were made out of the tables published by [EF](https://www.ef.edu/english-resources/english-idioms/).
+- List of Uncountable Nouns was made based on the [7ESL](https://7esl.com/uncountable-nouns/).
+- dictionary for idioms was made out of the tables published by [EF](https://www.ef.edu/english-resources/english-idioms/).
 - Colour formatting: [Colorama](https://pypi.org/project/colorama/).
 - Terminal menu: [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/).
 - Pluralizing and transforming verb into past time: [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) and [NLTK Package](https://www.nltk.org/)
