@@ -229,9 +229,23 @@ It was also tested by other users in order to spot possible grammatical mistakes
 
 Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into validator.
 
-The validator returned errors ragarding the length of the lines in madlib formatted string: "E501: line too long" 
+No errors were found:
 
-![Python Validator](documentation/validator_pep_8.png)
+- **run.py**
+
+![Python Validator](documentation/pep8_validator/validator_run_file.png)
+
+- **uncountable_nouns.py**
+
+![Python Validator](documentation/pep8_validator/validator_uncountable_nouns_file.png)
+
+- **gender_words.py**
+
+![Python Validator](documentation/pep8_validator/validator_gender_words_file.png)
+
+- **idioms.py**
+
+![Python Validator](documentation/pep8_validator/validator_idioms_file.png)
 
 
 ---
