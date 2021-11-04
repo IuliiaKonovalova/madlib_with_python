@@ -10,9 +10,7 @@ idioms_dictionary = {
     'Beat around the bush':
         'Avoid saying what you mean',
     'Better late than never':
-        'Better to arrive late than not to come at all',
-    'Bite the bullet':
-        'Get something over with because it is inevitable',
+        'Better to be late than not to come at all',
     'break a leg':
         'Good luck',
     'Call it a day':
@@ -20,13 +18,11 @@ idioms_dictionary = {
     'Cut somebody some slack':
         'Don\'t be so critical',
     'Cutting corners':
-        'Doing something poorly in order to save time or money',
+        'Working poorly to save time or money',
     'Easy does it':
         'Slow down',
     'Get out of hand':
         'Get out of control',
-    'Get something out of your system':
-        'Do the thing you\'ve been wanting so you can move on',
     'Pull someone\'s leg':
         'To joke with someone',
     'Get your act together':
@@ -42,7 +38,7 @@ idioms_dictionary = {
     'It\'s not rocket science':
         'It\'s not complicated',
     'Let someone off the hook':
-        'To not hold someone responsible for something	',
+        'Not hold someone responsible for something',
     'Make a long story short':
         'Tell something briefly',
     'Miss the boat':
@@ -56,14 +52,14 @@ idioms_dictionary = {
     'So far so good':
         'Things are going well so far',
     'Speak of the devil':
-        'The person we were just talking about showed up!',
+        'Person we were just talking about showed up!',
     'That\'s the last straw	':
         'My patience has run out',
     'Under the weather': 'Sick',
     'The best of both worlds':
         'An ideal situation',
     'Time flies when you\'re having fun':
-        'You don\'t notice how long something lasts when it\'s fun',
+        'You don\'t notice time when it\'s fun',
     'Get bent out of shape':
         'Get upset',
     'Make matters worse':
@@ -89,7 +85,7 @@ idioms_dictionary = {
     'Add insult to injury':
         'To make a bad situation worse',
     'Barking up the wrong tree':
-        'To be mistaken, to be looking for solutions in the wrong place',
+        'look for solutions in the wrong place',
     'Birds of a feather flock together':
         'People who are alike are often friends',
     'Bite off more than you can chew':
@@ -105,11 +101,11 @@ idioms_dictionary = {
     'Do something at the drop of a hat':
         'Do something without having planned beforehand',
     'Do unto others as you would have them do unto you':
-        'Treat people fairly. Also known as "The Golden Rule"',
+        'Treat people fairly',
     'Don\'t count your chickens before they hatch':
         'Don\'t count on something until it\'s happened.',
     'Don\'t cry over spilt milk':
-        'There\'s no reason to complain about something unfixable',
+        'No reason to complain about something unfixable',
     'Don\'t give up your day job':
         'You\'re not very good at this',
     'Don\'t put all your eggs in one basket':
@@ -117,7 +113,7 @@ idioms_dictionary = {
     'Every cloud has a silver lining':
         'Good things come after bad things',
     'Get a taste of your own medicine':
-        'Get treated the way you\'ve been treating others',
+        'Get treated the way you\'d treated others',
     'Give someone the cold shoulder':
         'Ignore someone',
     'Go on a wild goose chase':
@@ -146,12 +142,12 @@ idioms_dictionary = {
         'I made a mistake',
     'Look before you leap':
         'Take only calculated risks',
-    'On thin ice	On probation':
-        'If you make another mistake, there will be trouble',
+    'On thin ice':
+        'If you make more mistakes, wait for trouble',
     'Once in a blue moon':
         'Rarely',
     'Play devil\'s advocate':
-        'To argue the opposite, for the sake of argument',
+        'Argue the opposite for the sake of argument',
     'Put something on ice':
         'Put a projet on hold',
     'Rain on someone\'s parade':
@@ -171,13 +167,11 @@ idioms_dictionary = {
     'The best thing since sliced bread':
         'A really good invention',
     'The early bird gets the worm':
-        'The first people who arrive will get the best stuff',
+        'The first people who arrive will get the best',
     'The elephant in the room':
-        'The big issue, the problem people are avoiding',
+        'The big problem people are avoiding',
     'The whole nine yards':
         'Everything, all the way',
-    'There are other fish in the sea':
-        'It\'s ok to miss this opportunity. Others will arise',
     'There\'s a method to his madness':
         'He seems crazy but actually he\'s clever',
     'There\'s no such thing as a free lunch':
@@ -186,14 +180,10 @@ idioms_dictionary = {
         'Take a risk',
     'You can\'t have your cake and eat it too':
         'You can\'t have everything',
-    'You can\'t judge a book by its cover':
-        'This person/thing may look bad, but it\'s good inside',
     'A snowball effect':
         'Events have momentum and build upon each other',
     'A snowball\'s chance in hell':
         'No chance at all',
-    'A stitch in time saves nine':
-        'Fix the problem now because it will get worse later',
     'A storm in a teacup':
         'A big fuss about a small problem',
     'An apple a day keeps the doctor away':
@@ -205,7 +195,7 @@ idioms_dictionary = {
     'Burn bridges':
         'Destroy relationships',
     'Calm before the storm':
-        'Something bad is coming, but right now it\'s calm',
+        'Something bad is coming, but now it\'s calm',
     'Come rain or shine':
         'No matter what',
     'Curiosity killed the cat':
@@ -228,8 +218,6 @@ idioms_dictionary = {
         'Hear news of something secret',
     'Go down in flames':
         'Fail spectacularly',
-    'Haste makes waste':
-        'You\'ll make mistakes if you rush through something',
     'Have your head in the clouds':
         'Not be concentrating',
     'He who laughs last laughs loudest':
@@ -244,10 +232,6 @@ idioms_dictionary = {
         'He can\'t make up his mind',
     'It is always darkest before the dawn':
         'Things are going to get better',
-    'It takes two to tango':
-        'One person isn\'t responsible. Both people are involved',
-    'Jump on the bandwagon':
-        'Follow a trend, do what everyone else is doing',
     'Know which way the wind is blowing':
         'Understand the situation',
     'Leave no stone unturned':
@@ -262,8 +246,6 @@ idioms_dictionary = {
         'Take advantage of a good situation',
     'On cloud nine':
         'Very happy',
-    'Once bitten, twice shy':
-        'You\'re more cautious when you\'ve been hurt before',
     'Out of the frying pan and into the fire':
         'Things are going from bad to worse',
     'Run like the wind':
@@ -276,14 +258,10 @@ idioms_dictionary = {
         'It\'s too late',
     'There are clouds on the horizon':
         'Trouble is coming',
-    'Those who live in glass houses shouldn\'t throw stones':
-        'People who are morally questionable shouldn\'t criticize others',
     'Through thick and thin':
         'In good times and in bad times',
     'Time is money':
         'Work quickly',
-    'Waste not, want not':
-        'Don\'t waste things and you\'ll always have enough',
     'We see eye to eye':
         'We agree',
     'Weather the storm':
@@ -292,10 +270,6 @@ idioms_dictionary = {
         'Getting a good start is important',
     'When it rains it pours':
         'Everything is going wrong at once',
-    'You can catch more flies with honey than you can with vinegar':
-        'You\'ll get what you want by being nice',
-    'You can lead a horse to water, but you can\'t make him drink':
-        'You can\'t force someone to make the right decision',
     'You can\'t make an omelet without breaking some eggs':
-        'There\'s always a cost to doing something',
+        'There\'s always a cost to something',
 }
