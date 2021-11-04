@@ -335,7 +335,7 @@ def main_madlib():
 {choose_article(adj1).capitalize()} {noun1}
 {conjugate(verb1, tense = PAST)} and went to {choose_article(adj2, noun2)}.
 {format_pronoun(noun1).title()} kept {verb_infinitive(verb1)} slowly
-when noticed {choose_article(noun1)}
+when noticed
 {famous_person.title()} {verb_infinitive(verb2)}.
 {choose_article(noun1).capitalize()} and {famous_person.title()}
 decided to {verb3} and have
