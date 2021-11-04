@@ -354,20 +354,27 @@ and went to {choose_article(adj2, noun2)}.
 {format_pronoun(noun1).title()} noticed {famous_person.title()} {verb_infinitive(verb2)}.
 {choose_article(noun1).title()} and {famous_person.title()} decided to {verb3}
 and have {choose_article(size_adj1, color_adj1, noun3)} together.
+    '''
+    madlib_2 = f'''
 {Fore.BLUE}
 "It will cost an arm and a leg!"{Fore.WHITE} - said the {noun1}.
 {Fore.YELLOW}
 "Do not worry! I have a lot of {plural_noun(noun4)}! I can afford it!"
+    '''
+    madlib_3 = f'''
 {Fore.BLUE}
 "As you wish, {famous_person.title()}. You see, I am just a poor {noun1}...
 So I have only {plural_noun(noun5)}.
 If you want to share {choosing_a_quantifier(noun4)} {plural_noun(noun4)},
 let's get it!"{Fore.WHITE} - said the {noun1}.
-
+    '''
+    madlib_4 = f'''
 And they started walking towards
 {choose_article(size_adj2, color_adj2, noun6)}.
 It was already night when {famous_person.title()} noticed
 {choose_article(size_adj2, noun6)} on the horizon.
+    '''
+    madlib_5 = f'''
 {Fore.BLUE}
 "Can you see it? We are here!"{Fore.WHITE}
 - said {famous_person.title()} while pointing at the {noun6}.
@@ -375,21 +382,30 @@ It was already night when {famous_person.title()} noticed
 "Oh, yes! But look at this old {noun7} in the bushes!"
 {Fore.WHITE} - says the {noun1}.
 
+    '''
+    madlib_6 = f'''
 The old {noun7} started walking slowly
 towards {famous_person.title()} and the {noun1}.
 Then, they saw that {format_pronoun(noun7)} was carrying a golden coin.
+
+    '''
+    madlib_7 = f'''
 As soon as {format_pronoun(noun7)} reached our travelers,
 {format_pronoun(noun7)} started {verb_infinitive(verb4)}
 and handed out that golden coin to them and left silently.
 {famous_person.title()} looked at the coin...
 There were several words colored in {color_adj2} and
 a big {color_adj2} rose drawn under them.
+    '''
+    madlib_8 = f'''
 {Fore.BLUE}
 "What is written there?"{Fore.WHITE} - asked the {noun1}.
 {Fore.YELLOW}
 "{idioms_list[0]}"{Fore.WHITE} - read out loud {famous_person.title()}.
 {Fore.YELLOW}
 "That's strange..."{Fore.WHITE} - {famous_person.title()} added.
+    '''
+    madlib_9 = f'''
 {Fore.BLUE}
 "Why the text and the rose on the coin are {color_adj2}?"
 {Fore.WHITE} - pondered the {adj1} {noun1}.
@@ -398,24 +414,38 @@ a big {color_adj2} rose drawn under them.
 {Fore.WHITE}
 - {famous_person.title()} replied to {formatting_personal_pronoun(noun1)}.
 
+    '''
+    madlib_10 = f'''
 As soon as they got closer to the {size_adj2} {color_adj2} {noun6},
 the {noun1} yelled and started {verb_infinitive(verb1)}:
 {Fore.BLUE}
 "That's it!"
+    '''
+    madlib_11 = f'''
 {Fore.WHITE}
 On the front side of the {size_adj2} {color_adj2} {noun6} were
 a picture of a small version of {choose_article(size_adj2, color_adj2, noun6)}
 and a plate with 4 holes with sentences near them.
-
+    '''
+    madlib_12 = f'''
 {draw_holes(idioms_list[1][0])}
+    '''
+    madlib_13 = f'''
 {draw_holes(idioms_list[1][1])}
+    '''
+    madlib_14 = f'''
 {draw_holes(idioms_list[1][2])}
+    '''
+    madlib_15 = f'''
 {draw_holes(idioms_list[1][3])}
+    '''
+    madlib_16 = f'''
 {Fore.YELLOW}
 "Listen, {noun1}! As I've got it,
 we just need to {verb4} and throw our coin into the right hole."
 {Fore.WHITE} - said {famous_person.title()}.
-
+    '''
+    madlib_17 = f'''
 {Fore.BLUE}
 "Why do we need to {verb4} before throwing this coin?"
 {Fore.WHITE}- asked the {adj1} {noun1}.
@@ -426,33 +456,48 @@ Because the old {noun7} was {verb_infinitive(verb4)}!"
 "Ok! Now you have to figure out which whole is needed."
 {Fore.YELLOW}
 "Why me? I am not so savvy!"
+    '''
+    madlib_18 = f'''
 {Fore.BLUE}
 "Look! I am just a poor {noun1}!
 I have only {plural_noun(noun5)}! No brain!
 So it is you, {famous_person.title()}, who has to make a decision!"
 {Fore.YELLOW}
 "Why me?"
+    '''
+    madlib_19 = f'''
 {Fore.BLUE}
 "It's deffinitely a strange question!
 The answer is simple: because you have a lot of {plural_noun(noun4)}
 and you are famous!"
+    '''
+    madlib_20 = f'''
 {Fore.YELLOW}
 "That's fair... But still my
 {plural_noun(noun4)} {choose_correct_form_be(noun4)} not helpful here.
 Let me think...
 If I were an old {noun7}, what would I choose..."
+    '''
+    madlib_21 = f'''
 {Fore.WHITE}
 After pondering for an hour,
 {famous_person.title()} took a coin and threw it
 into the hole with the sentence:
+    '''
+    madlib_22 = f'''
 {Fore.RED}
 "{idioms_dictionary.get(idioms_list[0])}"{Fore.WHITE}.
+        '''
+    madlib_23 = f'''
 As soon as the coin disappeared in the hole, the wind blew and
 the ground opened up under them and swallowed them literally.
 They were falling down to nowhere...
 no light, no even a soul, just darkness everywhere...
+Only {color_adj2} sky above them.
 Eventually, the reached the ground.
 As luck would have it, they survived!
+    '''
+    madlib_24 = f'''
 {Fore.BLUE}
 "Why all of this is happenning to us?"
 {Fore.WHITE} - yelled the already terrified {noun1}.
@@ -461,57 +506,158 @@ As luck would have it, they survived!
 It might be all about...
 {choose_article(size_adj1, color_adj1, noun3)}..."
 {Fore.WHITE}- replied {famous_person.title()}.
+    '''
+    madlib_25 = f'''
 {Fore.BLUE}
 "Yeah!
 I heard the the quality of the {size_adj1} {color_adj1} {noun3}
 is just marvelous!"{Fore.WHITE}.
-
+    '''
+    madlib_26 = f'''
 Had it not been for the lack of light,
 they would have realized on time that they were not alone.
 Then the light turned on and they saw everything...
 They were in a huge room, where everything was colored in {color_adj2}.
 They were surrounded by millions of old {plural_noun(noun7)}
 with their spears pointing at our travellers.
-
-{Fore.BLUE}"What's going on?"{Fore.WHITE} - whispered the poor {noun1}.
-
-{Fore.YELLOW}"Unacceptable!
-I am {famous_person.title()}!
+    '''
+    madlib_27 = f'''
+{Fore.BLUE}
+"What's going on?"{Fore.WHITE} - whispered the poor {noun1}.
+{Fore.YELLOW}
+"Unacceptable! I am {famous_person.title()}!
 You have to know who I am! Let us go!"
-
+    '''
+    madlib_28 = f'''
 {Fore.RED}"Silence!"{Fore.WHITE} - one of the old {plural_noun(noun7)} ordered.
 {Fore.RED}"You think you are allowed to be cocky!?"
-
+    '''
+    madlib_29 = f'''
 {Fore.YELLOW}"Ok, let's make a deal!
 You see, I am in possession of lots of {plural_noun(noun4)}!
 So I will give you half of my fortune if you simply let us go
 with {choose_article(size_adj1, color_adj1, noun3)}"
-
+    '''
+    madlib_30 = f'''
 {Fore.RED}"Pathetic!"{Fore.WHITE} - the same old {noun7} responded
 - {Fore.RED}Your {plural_noun(noun4)} {choose_correct_form_be(noun4)} nothing!
 But you two stole the golden coin!"
-
+    '''
+    madlib_31 = f'''
 {Fore.BLUE}"Excuse me, sir"{Fore.WHITE} - mumbled {noun1} -
 {Fore.BLUE}"That's not true!
 One of the you gave it to us,
 {conjugate(verb4, tense = PAST)}, and left silently".
-
+    '''
+    madlib_32 = f'''
 {Fore.RED}"listen! You don't have the right to take anything from our folks!
 But you did! Moreover, you also performed our thing!"
 {Fore.BLUE}
 "What thing? We did nothing! We just wanted to have
 {choose_article(size_adj1, color_adj1, noun3)} together!"
+    '''
+    madlib_33 = f'''
 {Fore.RED}
 "You {conjugate(verb4, tense = PAST)} on purpose!"
 {Fore.WHITE}- the old {noun7}
 turned to the old {plural_noun(noun7)} who were holding spears.
 {Fore.RED}"Put them in prison! Now!".
+    '''
+    madlib_34 = f'''
 {Fore.WHITE}
 The {plural_noun(noun7)} with spears stepped forward and grabbed our travelers.
 They were dragging them through endless {color_adj2} tunnel.
-
     '''
+    madlib_35 = f'''
+After some time they were kicked into a dark {color_adj2} prison cell.
+{noun1.capitalize()} and {famous_person.title()} kept silence  for a while.
+{Fore.YELLOW}
+"What's in your mind, {noun1}?"
+{Fore.BLUE}
+"What's in my mind? I'll tell you what's in my mind!
+What's wring with you, {famous_person.title()}?
+You think that if you're famous and have a lot of {plural_noun(noun4)},
+you are allowed to say what ever you want?"
+    '''
+    madlib_36 = f'''
+Then they herd some wishper...
+{Fore.MAGENTA}"Hello there!" - {Fore.WHITE}said unfamiliar voice.
+Actually if was the {choose_article(adj2, noun2)}!
+But they will never guess for the whole their lives.
+    '''
+
     print(madlib_1)
+    sleep(7)
+    print(madlib_2)
+    sleep(6)
+    print(madlib_3)
+    sleep(9)
+    print(madlib_4)
+    sleep(6)
+    print(madlib_5)
+    sleep(5)
+    print(madlib_6)
+    sleep(5)
+    print(madlib_7)
+    sleep(12)
+    print(madlib_8)
+    sleep(6)
+    print(madlib_9)
+    sleep(6)
+    print(madlib_10)
+    sleep(6)
+    print(madlib_11)
+    sleep(8)
+    print(madlib_12)
+    sleep(4)
+    print(madlib_13)
+    sleep(4)
+    print(madlib_14)
+    sleep(4)
+    print(madlib_15)
+    sleep(4)
+    print(madlib_16)
+    sleep(6)
+    print(madlib_17)
+    sleep(10)
+    print(madlib_18)
+    sleep(8)
+    print(madlib_19)
+    sleep(6)
+    print(madlib_20)
+    sleep(6)
+    print(madlib_21)
+    sleep(6)
+    print(madlib_22)
+    sleep(4)
+    print(madlib_23)
+    sleep(15)
+    print(madlib_24)
+    sleep(10)
+    print(madlib_25)
+    sleep(6)
+    print(madlib_26)
+    sleep(16)
+    print(madlib_27)
+    sleep(6)
+    print(madlib_28)
+    sleep(6)
+    print(madlib_29)
+    sleep(8)
+    print(madlib_30)
+    sleep(4)
+    print(madlib_31)
+    sleep(6)
+    print(madlib_32)
+    sleep(6)
+    print(madlib_33)
+    sleep(6)
+    print(madlib_34)
+    sleep(6)
+    print(madlib_35)
+    sleep(12)
+    print(madlib_36)
+    sleep(6)
 
 
 def show_the_rules():
@@ -523,6 +669,7 @@ def show_the_rules():
     {Fore.YELLOW}2. {Fore.WHITE}Type the words correctly!
     {Fore.YELLOW}3. {Fore.WHITE}Don't cheat!
     ''')
+    sleep(1)
 
 
 def main():
@@ -541,7 +688,7 @@ def main():
         user_name = input('Please enter your name: ')
     print(f'''
 {Fore.GREEN}
-Greeting to you,{Fore.YELLOW}{user_name}{Fore.GREEN}!
+Greeting to you, {Fore.YELLOW}{user_name}{Fore.GREEN}!
 I hope you are doing well!
 Please, pick an option in the {Fore.YELLOW}menu!
     ''')
