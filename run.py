@@ -734,7 +734,7 @@ def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     # Shows welcoming message
     print(f'''
-{Fore.GREEN}Welcome to {Fore.YELLOW}Another Madlib Game!
+{Fore.GREEN}Welcome to {Fore.YELLOW}The Maddest Madlib!
     ''')
     user_name = ''
     # Ask user's name
