@@ -749,6 +749,9 @@ Please, pick an option in the {Fore.YELLOW}menu!
     sleep(1)
     options = ['1. Learn the rules', '2. Start the game', '3. Quit']
     main_menu = TerminalMenu(options)
+    sub_options = ['1. Story 1', '2. Story 2', '3. Story 3', '4. Go back']
+    sub_menu = TerminalMenu(sub_options)
+    
     quitting = False
     while quitting is not True:
         options_index = main_menu.show()
@@ -773,13 +776,30 @@ Please read the rules attentively and follow them precisely!
             sleep(1)
             show_the_rules()
         else:
-            print(f'''
-{Fore.GREEN}Be ready to type words...
-            ''')
-            sleep(2)
-            main_madlib()
-            print(f'''
-{Fore.GREEN}The end.{Fore.WHITE}{Style.RESET_ALL}
-            ''')
+            suboptions_index = sub_menu.show()
+            suboptions_choice = sub_options[suboptions_index]
+            message_to_user_1 = f'''
+    {Fore.GREEN}Be ready to type words...
+                '''
+            message_to_user_2 = f'''
+    {Fore.GREEN}The end.{Fore.WHITE}{Style.RESET_ALL}
+                '''
+            if suboptions_choice == '1. Story 1':
+                print(message_to_user_1)
+                sleep(2)
+                main_madlib()
+                print(message_to_user_2)
+            elif suboptions_choice == '2. Story 2':
+                print(message_to_user_1)
+                sleep(2)
+                main_madlib_2()
+                print(message_to_user_2)
+            elif suboptions_choice == '2. Story 3':
+                print(message_to_user_1)
+                sleep(2)
+                main_madlib_3()
+                print(message_to_user_2)
+            else:
+                options_index = main_menu.show()
 
 main()
