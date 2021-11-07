@@ -267,6 +267,89 @@ def draw_holes(mean):
 {sth1}
 {sth1}{Fore.RESET}'''
 
+def main_madlib_2():
+    """
+    Asks for user input, checks the input,
+    prints the madlib strings with time interval
+    """
+    # Variables for a user's input
+    adj1 = ''
+    noun1 = ''
+    verb1 = ''
+    adj2 = ''
+    noun2 = ''
+    verb2 = ''
+    noun3 = ''
+    adj3 = ''
+    noun4 = ''
+
+    while len(adj1) < 2:
+        adj1 = input('Type an adjective: ')
+    while len(noun1) < 2:
+        noun1 = input('Type a noun (living thing): ')
+    while len(verb1) < 2:
+        verb1 = input('Type a verb: ')
+    while len(adj2) < 2:
+        adj2 = input('Type an adjective: ')
+    while len(noun2) < 2:
+        noun2 = input('Type a noun: ')
+    while len(verb2) < 2:
+        verb2 = input('Type a verb: ')
+    while len(noun3) < 2:
+        noun3 = input('Type a noun: ')
+    while len(adj3) < 2:
+        adj3 = input('Type a adjective: ')
+    while len(noun4) < 2:
+        noun4 = input('Type a noun: ')
+    madlib_1 = f'''
+{Style.BRIGHT}{Fore.WHITE}
+A long time ago...
+In a galaxy named {noun2.capitalize()}...
+{plural_noun(noun1).capitalize()} were living in peace.
+These {plural_noun(noun1)} loved {verb_infinitive(verb1)} very much.
+They {conjugate(verb1, tense = PAST)} without stopping because
+of their belief that the {noun2.capitalize()} galaxy was thriving on their
+favorite activity: {verb_infinitive(verb1)}.
+
+They were thusands of planets in this galaxy and almost all of them were
+inhabited with {plural_noun(noun1)}. Some were {adj1} and some were {adj2}.
+
+The main purpose of their lives was to earn {noun2.capitalize()} status.
+This status meant everything to the {plural_noun(noun2)}, no metter
+whether they were {adj1} or {adj2}.
+{choose_article(noun2).capitalize()} which reached {noun2.capitalize()}
+status were called {noun2.capitalize()}-master.
+{noun2.capitalize()}-masters were empowered to learn about other galaxies
+and even visit them.
+To obtain this status {plural_noun(noun1)} had to exchange
+goods with each other without any quarrels and {verb1} as much as possible.
+
+The most fascinating thing about all this {noun2.capitalize()} galaxy was that
+they were using {plural_noun(noun3)} to communicate with each other.
+Of course, only {noun2.capitalize()}-masters were aware of how to built those
+{plural_noun(noun3)}. This means that common {plural_noun(noun1)} depended on
+masters a lot. However, masters needed to get materials to built
+{plural_noun(noun3)}. And those materials were in the Galaxy called {noun3}.
+This galaxy was a very dangerous one because it had a ruler, who hated
+the {noun2.capitalize()} galaxy and did what ever it takes to destroy
+visitors from that galaxy.
+
+As {noun2.capitalize()}-masters were using {adj3} {plural_noun(noun4)}
+to travel beyond the {noun2.capitalize()} galaxy,
+they {conjugate(verb2, tense = PAST)} with lots of power as cosmos was a hostile
+environment for their {adj3} {plural_noun(noun4)}.
+
+So the ruler of the {noun3.capitalize()} galaxy was always waiting for the
+{adj3} {plural_noun(noun4)} to enter h
+
+{noun2.capitalize()}-masters were travelling their every now and then
+Unfortunately, were creating tons of {plural_noun(noun3)} on a daily basis.
+And by daily basis, I mean, 
+
+
+
+    '''
+    print(madlib_1)
 
 def main_madlib():
     """
@@ -751,7 +834,6 @@ Please, pick an option in the {Fore.YELLOW}menu!
     main_menu = TerminalMenu(options)
     sub_options = ['1. Story 1', '2. Story 2', '3. Story 3', '4. Go back']
     sub_menu = TerminalMenu(sub_options)
-    
     quitting = False
     while quitting is not True:
         options_index = main_menu.show()
