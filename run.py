@@ -284,23 +284,23 @@ def main_madlib_2():
     noun4 = ''
 
     while len(adj1) < 2:
-        adj1 = input('Type an adjective: ')
+        adj1 = input('Type an adjective: ').strip()
     while len(noun1) < 2:
-        noun1 = input('Type a noun (living thing): ')
+        noun1 = input('Type a noun (living thing): ').strip()
     while len(verb1) < 2:
-        verb1 = input('Type a verb: ')
+        verb1 = input('Type a verb: ').strip()
     while len(adj2) < 2:
-        adj2 = input('Type an adjective: ')
+        adj2 = input('Type an adjective: ').strip()
     while len(noun2) < 2:
-        noun2 = input('Type a noun: ')
+        noun2 = input('Type a noun: ').strip()
     while len(verb2) < 2:
-        verb2 = input('Type a verb: ')
+        verb2 = input('Type a verb: ').strip()
     while len(noun3) < 2:
-        noun3 = input('Type a noun: ')
+        noun3 = input('Type a noun: ').strip()
     while len(adj3) < 2:
-        adj3 = input('Type a adjective: ')
+        adj3 = input('Type a adjective: ').strip()
     while len(noun4) < 2:
-        noun4 = input('Type a noun: ')
+        noun4 = input('Type a noun: ').strip()
     madlib_1 = f'''
 {Style.BRIGHT}{Fore.WHITE}
 A long time ago...
@@ -376,41 +376,41 @@ def main_madlib():
     verb4 = ''
     # Check the the user's inputs
     while len(adj1) < 2:
-        adj1 = input('Type an adjective: ')
+        adj1 = input('Type an adjective: ').strip()
     while len(noun1) < 2:
-        noun1 = input('Type a noun (living thing): ')
+        noun1 = input('Type a noun (living thing): ').strip()
     while len(verb1) < 2:
-        verb1 = input('Type a verb: ')
+        verb1 = input('Type a verb: ').strip()
     while len(adj2) < 2:
-        adj2 = input('Type an adjective: ')
+        adj2 = input('Type an adjective: ').strip()
     while len(noun2) < 2:
-        noun2 = input('Type a noun: ')
+        noun2 = input('Type a noun: ').strip()
     while len(famous_person) < 2:
-        famous_person = input("Type a famous person: ")
+        famous_person = input("Type a famous person: ").strip()
     while len(verb2) < 2:
-        verb2 = input('Type a verb: ')
+        verb2 = input('Type a verb: ').strip()
     while len(verb3) < 2:
-        verb3 = input('Type a verb: ')
+        verb3 = input('Type a verb: ').strip()
     while len(noun3) < 2:
-        noun3 = input('Type a noun: ')
+        noun3 = input('Type a noun: ').strip()
     while len(size_adj1) < 2:
-        size_adj1 = input('Type a size adjective: ')
+        size_adj1 = input('Type a size adjective: ').strip()
     while len(color_adj1) < 2:
-        color_adj1 = input('Type a color adjective: ')
+        color_adj1 = input('Type a color adjective: ').strip()
     while len(noun4) < 2:
-        noun4 = input('Type a noun: ')
+        noun4 = input('Type a noun: ').strip()
     while len(noun5) < 2:
-        noun5 = input('Type a noun: ')
+        noun5 = input('Type a noun: ').strip()
     while len(size_adj2) < 2:
-        size_adj2 = input('Type a size adjective: ')
+        size_adj2 = input('Type a size adjective: ').strip()
     while len(color_adj2) < 2:
-        color_adj2 = input('Type a color adjective: ')
+        color_adj2 = input('Type a color adjective: ').strip()
     while len(noun6) < 2:
-        noun6 = input('Type a noun: ')
+        noun6 = input('Type a noun: ').strip()
     while len(noun7) < 2:
-        noun7 = input('Type a noun (living thing): ')
+        noun7 = input('Type a noun (living thing): ').strip()
     while len(verb4) < 2:
-        verb4 = input('Type a verb: ')
+        verb4 = input('Type a verb: ').strip()
     # Madlib formatted string
 
     madlib_1 = f'''
