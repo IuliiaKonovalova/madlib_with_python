@@ -230,7 +230,9 @@ No errors were found:
 
 ![Python Validator](documentation/pep8_validator/validator_idioms_file.png)
 
+- **dictionary_letters.py**
 
+![Python Validator](documentation/pep8_validator/validator_dictionary_letters_file.png)
 ---
 
 ## Deployment
