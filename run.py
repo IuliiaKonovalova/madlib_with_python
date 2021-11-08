@@ -304,47 +304,92 @@ def main_madlib_2():
     madlib_1 = f'''
 {Style.BRIGHT}{Fore.WHITE}
 A long time ago...
-In a galaxy named {noun2.capitalize()}...
-{plural_noun(noun1).capitalize()} were living in peace.
-These {plural_noun(noun1)} loved {verb_infinitive(verb1)} very much.
+In a galaxy named {Fore.YELLOW}{noun2.capitalize()}{Fore.WHITE}...
+{Fore.BLUE}{plural_noun(noun1).capitalize()}{Fore.WHITE} were living in peace.
+These {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} loved
+{verb_infinitive(verb1)} very much.
 They {conjugate(verb1, tense = PAST)} without stopping because
-of their belief that the {noun2.capitalize()} galaxy was thriving on their
-favorite activity: {verb_infinitive(verb1)}.
+of their belief that {Fore.YELLOW}the {noun2.capitalize()} galaxy{Fore.WHITE}
+was thriving on their favorite activity: {verb_infinitive(verb1)}.
 
-They were thusands of planets in this galaxy and almost all of them were
-inhabited with {plural_noun(noun1)}. Some were {adj1} and some were {adj2}.
+There were thousands of planets in this galaxy and almost all of them were
+inhabited with {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE}.
+Some were {adj1} and some were {adj2}.
 
-The main purpose of their lives was to earn {noun2.capitalize()} status.
-This status meant everything to the {plural_noun(noun2)}, no metter
-whether they were {adj1} or {adj2}.
-{choose_article(noun2).capitalize()} which reached {noun2.capitalize()}
-status were called {noun2.capitalize()}-master.
-{noun2.capitalize()}-masters were empowered to learn about other galaxies
-and even visit them.
-To obtain this status {plural_noun(noun1)} had to exchange
-goods with each other without any quarrels and {verb1} as much as possible.
+The main purpose of their lives was to earn
+{Fore.YELLOW}the {noun2.capitalize()} status{Fore.WHITE}.
+This status meant everything to the {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE},
+no matter whether they were {adj1} or {adj2}.
+{Fore.BLUE}{choose_article(noun2).capitalize()}{Fore.WHITE}, which reached
+{Fore.YELLOW}the {noun2.capitalize()} status{Fore.WHITE} were called
+{Fore.YELLOW}{noun2.capitalize()}-master{Fore.WHITE}.
 
-The most fascinating thing about all this {noun2.capitalize()} galaxy was that
-they were using {plural_noun(noun3)} to communicate with each other.
-Of course, only {noun2.capitalize()}-masters were aware of how to built those
-{plural_noun(noun3)}. This means that common {plural_noun(noun1)} depended on
+{Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} were empowered to learn
+about other galaxies and even explore them.
+To obtain this status, {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} had to
+exchange goods with each other without any quarrels and {verb1} as much
+as possible during their lives.
+
+The most fascinating thing about all this {Fore.YELLOW}{noun2.capitalize()}
+galaxy{Fore.WHITE} was that they were using {plural_noun(noun3)} to communicate
+with each other inside their galaxy.
+Of course, only {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} were aware
+of how to built those {plural_noun(noun3)}.
+This meant that common {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} depended on
 masters a lot. However, masters needed to get materials to built
-{plural_noun(noun3)}. And those materials were in the Galaxy called {noun3}.
-This galaxy was a very dangerous one because it had a ruler, who hated
-the {noun2.capitalize()} galaxy and did what ever it takes to destroy
-visitors from that galaxy.
+{plural_noun(noun3)}. And those materials were in the Galaxy called
+{Fore.RED}{noun3.capitalize()}{Fore.WHITE}.
 
-As {noun2.capitalize()}-masters were using {adj3} {plural_noun(noun4)}
-to travel beyond the {noun2.capitalize()} galaxy,
-they {conjugate(verb2, tense = PAST)} with lots of power as cosmos was a hostile
-environment for their {adj3} {plural_noun(noun4)}.
+This galaxy was a very dangerous one because it had
+a {Fore.RED}Ruler{Fore.WHITE}, who hated {Fore.YELLOW}
+the {noun2.capitalize()} galaxy{Fore.WHITE} and did what ever it takes to
+destroy visitors from that galaxy.
 
-So the ruler of the {noun3.capitalize()} galaxy was always waiting for the
-{adj3} {plural_noun(noun4)} to enter h
+As {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} were using {adj3}
+{plural_noun(noun4)} to travel beyond {Fore.YELLOW}the {noun2.capitalize()}
+galaxy{Fore.WHITE}, they {conjugate(verb2, tense = PAST)} with lots of power
+as cosmos was a hostile environment for their {adj3} {plural_noun(noun4)}.
 
-{noun2.capitalize()}-masters were travelling their every now and then
-Unfortunately, were creating tons of {plural_noun(noun3)} on a daily basis.
-And by daily basis, I mean, 
+So the {Fore.RED}Ruler{Fore.WHITE} of {Fore.RED}the {noun3.capitalize()} galaxy
+{Fore.WHITE} was always waiting for the
+{adj3} {plural_noun(noun4)} to enter his territories.
+As soon as he was informed that {choose_article(adj3, noun4)} enters his galaxy,
+he ordered all of the living things in {Fore.RED}the {noun3} galaxy{Fore.WHITE}
+to {verb1}. It created the illusion for {Fore.YELLOW}{noun2.capitalize()}-
+masters{Fore.WHITE} that they were entering their
+own galaxy and they were stopping {verb_infinitive(verb2)} and as a 
+consequence - losing control of their {plural_noun(noun4)}.
+
+Fortunately for the communication in the galaxy where {Fore.BLUE}{adj1} and
+{adj2} {plural_noun(noun1)}{Fore.WHITE} were living,
+it was not always the case, and thus, they were getting their
+{plural_noun(noun3)} to chat with each other.
+
+But once one of the {Fore.BLUE}{adj1} {plural_noun(noun1)}{Fore.WHITE} decided
+to talk {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} into taking over
+{Fore.RED}the {noun3.capitalize()} galaxy{Fore.WHITE} to make the recourses
+for building their communication devices easier to obtain.
+{Fore.BLUE}
+"We have to make it easier for our folks to perform {verb_infinitive(verb1)}!
+It is the most enjoyable activity for us!
+We can't allow some greedy {Fore.RED}Ruler{Fore.WHITE} to take it from us!
+Let's make more {adj3} {plural_noun(noun4)} and put more {noun1} in them that
+we could travel beyond our galaxy all together!"
+{Fore.YELLOW}
+"We cannot let simple {Fore.BLUE}{noun1}{Fore.YELLOW} to go farther than
+our terretory unprepared!
+They have to learn their way to the appropriate status!
+It is the low of our galaxy!"
+{Fore.BLUE}
+I do know it!
+But desperate times call for desperate measures!
+We have to make an exception for the sake of our galaxy and {noun1}
+living here!"
+
+
+
+
+
 
 
 
