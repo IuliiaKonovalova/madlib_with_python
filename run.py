@@ -835,9 +835,17 @@ He was given a list with some text and left alone in a small version of
 - said the {Fore.BLUE}{adj1} {noun1}{Fore.WHITE} to
 {formatting_reflexive_pronoun(noun1)} and started reading.
 
-It was some kind of a quiz, which consisted to lines filled with words and
+It was some kind of a quiz, which consisted five lines filled with words and
 one empty line at the end:
 
+1. {' '.join(idioms_list[1][0].lower().split( )[::-1])}
+2. {' '.join(idioms_list[1][1].lower().split( )[::-1])}
+3. {' '.join(idioms_list[1][2].lower().split( )[::-1])}
+4. {' '.join(idioms_list[1][3].lower().split( )[::-1])}
+5. {' '.join(idioms_list[0].lower().split( )[::-1])}
+5. ______
+
+{idioms_dictionary.get(idioms_list[0])}
 
 
 
