@@ -1,13 +1,8 @@
 import os
-
 from colorama import Fore, Style
 from simple_term_menu import TerminalMenu
 from time import sleep
-
 from madlibs import main_madlib, main_madlib_2
-
-
-
 
 
 def show_the_rules():

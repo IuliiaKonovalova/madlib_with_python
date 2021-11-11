@@ -1,6 +1,5 @@
 from colorama import Fore, Style
 from simple_term_menu import TerminalMenu
-# from run import verb_formatting, format_pronoun, formatting_personal_pronoun, formatting_reflexive_pronoun, verb_infinitive, plural_noun, choose_article, choosing_a_quantifier, idioms_list, choose_correct_form_be, draw_holes
 from words_formatting import *
 
 
@@ -384,8 +383,8 @@ Eventually, they got the keys!
 "Hurry up! You have not much time!"
     ''',
         f'''
-{Style.BRIGHT}{Fore.WHITE}When our travelers left the tunnel, the {adj2} {noun2}
-easily entered the cell where {famous_person.title()} and {noun1}
+{Style.BRIGHT}{Fore.WHITE}When our travelers left the tunnel, the {adj2}
+{noun2} easily entered the cell where {famous_person.title()} and {noun1}
 had stayed for a while. {format_pronoun(noun2).capitalize()} took
 a camera out of the mirror and placed two boxes in
 the bags for evidence.
@@ -629,9 +628,7 @@ communication between each other. As chatting on {plural_noun(noun3)} and
 go for the invasion in {Fore.RED}the {noun3.capitalize()} galaxy
 {Fore.WHITE}.
 
-And when everything was ready such as enough amount of provision, and enough 
-
-
+And when everything was ready such as enough amount of provision, and enough
 
     '''
     print(madlib_2)

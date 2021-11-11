@@ -11,7 +11,6 @@ nltk.set_proxy('127.0.0.1:41091')
 nltk.download('wordnet')
 
 
-
 def verb_formatting(verb):
     """
     Checks the verb and changes the form of a verb for a sentense
