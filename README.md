@@ -49,7 +49,7 @@ Users can quickly learn the rules of the game and type any words according to th
   
   <!-- here goes image -->
 
-  - **When the user types his/her name.**
+  - **When the user types a name.**
 
   - Sends personal greetings and short instruction on the next step;
 
@@ -74,7 +74,7 @@ Users can quickly learn the rules of the game and type any words according to th
 
   - **When the user chose "Play the game"**
 
-  The program will show the sub-menu with following options to choose from:
+  The program will show the sub-menu with the following options to choose from:
 
   1. Story 1: "Absolute Madness";
 
@@ -84,23 +84,24 @@ Users can quickly learn the rules of the game and type any words according to th
 
   <!-- here goes image -->
 
-  Here the user can choose which story preferable story to play or go back to the main menu.
+  Here the user can choose which story is preferable to play or go back to the main menu.
 
 - **When the user chose a particular story**
 
-  The program alert the user to be ready to type the words.
+  The program alerts the user to be ready to type the words.
 
   <!-- here goes image -->
 
-  Than the user will be asked to type words according to the parts of speech. The user is allowed to use compound words to make the user's experience more fascinating.
-  When all words are typed, user will receive the whole story based on the key words which he or she typed before.
-  Below the story the user can find the main menu where he or she may read the rules again, or play another game, or quit the program.
+  Then, the user will be asked to type words according to the parts of speech. The user is allowed to use compound words to make the user's experience more fascinating.
+  When all words are typed, the user will receive the whole story based on the keywords which he or she typed before.
+  Below the story, the user can find the main menu where he or she may reread the rules, play another game, or quit the program.
 
   *Here the image goes*
 
   - **When the user chose "Quit"**
 
-  The user will see a goodbye message and program will be stopped.
+
+  The user will see a goodbye message, and the program will be stopped.
 
   <!-- here goes image -->
 
@@ -108,7 +109,7 @@ Users can quickly learn the rules of the game and type any words according to th
 
 ## Flowchart
 
-The flowchart represent the logic of the application:
+The flowchart represents the logic of the application:
 
   ![Flash Card Page](documentation/flowchart_madlib.png)
 
@@ -136,7 +137,7 @@ The flowchart represent the logic of the application:
 
 - [NLTK Package](https://www.nltk.org/) was used in order to be able to work with pattern package.
 - [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) was used to pluralize nouns where it is needed.
-- [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/) was used to implement menu.
+- [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/) was used to implement the menu.
 - [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the project.
 
 #### Other tools:
@@ -145,7 +146,7 @@ The flowchart represent the logic of the application:
 - [Git](https://git-scm.com/) was used for the version control of the website.
 - [GitHub](https://github.com/) was used to host the code of the website.
 - [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
-- [Draw.io](https://www.lucidchart.com/) was used to make flowchart for the README file.
+- [Draw.io](https://www.lucidchart.com/) was used to make a flowchart for the README file.
 
 
 --
@@ -187,7 +188,7 @@ The flowchart represent the logic of the application:
         Prevent "RuntimeError: generator raised StopIteration"
         The package has raised StopIteration that was missed in python earlier versions.
         Thus, it had worked before Python version 3.7 was introduced.
-        Since the package has not been updates since August 2018, it raises the error and stops the app.
+        Since the package has not been updated since August 2018, it raises the error and stops the app.
         "PEP 479 is enabled for all code in Python >= 3.7, meaning that StopIteration exceptions raised
         directly or indirectly in coroutines and generators are transformed
         into RuntimeError exceptions."
@@ -211,9 +212,10 @@ The flowchart represent the logic of the application:
     def plural_noun(noun):
     """
     Checks whether the noun is countable or not and transform into plural if it's countable
-    This function is needed to prevent pluralization of uncountable nouns bt pattern package
+    This function is needed to prevent the pluralization of uncountable nouns bt pattern package.
     """
-    # Checks if the noun is uncountable, if it is, returns the nouns
+    # Checks if the noun is uncountable; if it is, returns the nouns
+    if the noun in uncountable_nouns:
     if noun in uncountable_nouns:
         return noun
     # Otherwise, pluralize noun with the patterns package
@@ -225,7 +227,7 @@ The flowchart represent the logic of the application:
 
     - The pattern.en package does not pluralize all words correctly even if they are plural.
 
-      - For example: word 'bus' was pluralized as 'buss'.
+      - For example, the word 'bus' was pluralized as 'buss'.
 
 ---
 
@@ -233,7 +235,7 @@ The flowchart represent the logic of the application:
 ## Testing
 
 The program was tested constantly during its development process.
-Other users also tested it in order to spot possible grammatical mistakes that code may present.
+Other users also tested it in order to spot possible grammatical mistakes that the code may present.
 
 ### Validators
 
