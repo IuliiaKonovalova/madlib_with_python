@@ -139,7 +139,7 @@ idioms_dictionary = {
     'Let the cat out of the bag':
         'Give away a secret',
     'Live and learn':
-        'I made a mistake',
+        'one\'s learned something from personal experience',
     'Look before you leap':
         'Take only calculated risks',
     'On thin ice':
