@@ -44,38 +44,65 @@ Users can quickly learn the rules of the game and type any words according to th
   
   - **When the program is loaded**
 
-  The user can see a welcoming message which engages to start playing and the terminal menu with three options:
+  The user can see a welcoming message which engages to start playing and the 
+  polite question to enter the user's name:
+  
+  <!-- here goes image -->
 
-  - Learn the rules;
+  - **When the user types his/her name.**
 
-  - Play the game;
+  - Sends personal greetings and short instruction on the next step;
 
-  - Quit;
+  - Shows the terminal menu with three options:
+
+    1. Learn the rules;
+
+    1. Play the game;
+
+    1. Quit;
+
+      <!-- here goes image -->
 
   The user can manipulate the terminal menu with the arrow keys to choose an option and the enter key to confirm the choice.
-
-  *Here the image goes*
 
   - **When the user chose "Learn the rules"**
 
   The user will see the main rules of the game which are required to be followed.
   Below the rules, the user can find the main menu where he or she may choose another option.
 
-  *Here the image goes*
+  <!-- here goes image -->
 
   - **When the user chose "Play the game"**
 
-  The user will be asked to type words according to the parts of speech. The user is allowed to use compound words to make the user's experience more fascinating.
+  The program will show the sub-menu with following options to choose from:
+
+  1. Story 1: "Absolute Madness";
+
+  1. Story 2: "Slight Madness";
+
+  1. Go back;
+
+  <!-- here goes image -->
+
+  Here the user can choose which story preferable story to play or go back to the main menu.
+
+- **When the user chose a particular story**
+
+  The program alert the user to be ready to type the words.
+
+  <!-- here goes image -->
+
+  Than the user will be asked to type words according to the parts of speech. The user is allowed to use compound words to make the user's experience more fascinating.
   When all words are typed, user will receive the whole story based on the key words which he or she typed before.
-  Below the story user can find the main menu where he or she may read the rules again, or play another game, or quit the program.
+  Below the story the user can find the main menu where he or she may read the rules again, or play another game, or quit the program.
 
   *Here the image goes*
 
   - **When the user chose "Quit"**
 
-  The program will be stopped immediately.
+  The user will see a goodbye message and program will be stopped.
 
-  *Here the image goes*
+  <!-- here goes image -->
 
 ---
 
