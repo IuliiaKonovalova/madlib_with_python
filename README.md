@@ -218,6 +218,14 @@ No errors were found:
 
 ![Python Validator](documentation/pep8_validator/validator_run_file.png)
 
+- **words_formatting.py**
+
+![Python Validator](documentation/pep8_validator/validator_words_formatting_file.png)
+
+- **madlibs.py**
+
+![Python Validator](documentation/pep8_validator/validator_madlibs_file.png)
+
 - **uncountable_nouns.py**
 
 ![Python Validator](documentation/pep8_validator/validator_uncountable_nouns_file.png)
