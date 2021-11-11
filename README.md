@@ -384,3 +384,9 @@ Create a local copy of the GitHub repository by following one of the two process
 - Pluralizing and transforming verb into past time: [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) and [NLTK Package](https://www.nltk.org/)
 
 
+---
+## Acknowledgements
+
+[Tim Nelson](https://github.com/TravelTimN)
+
+I am enormously thankful to my mentor Tim Nelson for his guidance and valuable feedback!
