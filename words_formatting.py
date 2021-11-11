@@ -200,7 +200,7 @@ def run_the_time_error():
     The package has raised StopIteration,
     that was missed in python earier versions.
     Thus, it had worked before Python version 3.7 was introduced.
-    Since the package has not been updates since August 2018,
+    Since the package has not been updated since August 2018,
     it raises the error and stops the app.
     "PEP 479 is enabled for all code in Python >= 3.7,
     meaning that StopIteration exceptions raised

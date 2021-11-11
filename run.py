@@ -38,9 +38,12 @@ I hope you are doing well!
 Please, pick an option in the {Fore.YELLOW}menu!
     ''')
     sleep(1)
-    options = ['1. Learn the rules', '2. Start the game', '3. Quit']
+    options = ['1. Learn the rules', '2. Play the game', '3. Quit']
     main_menu = TerminalMenu(options)
-    sub_options = ['1. Story 1', '2. Story 2', '3. Go back']
+    sub_options = [
+        '1. Story 1: "Absolute Madness"',
+        '2. Story 2: "Slight Madness"',
+        '3. Go back']
     sub_menu = TerminalMenu(sub_options)
     quitting = False
     while quitting is not True:
