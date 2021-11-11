@@ -19,7 +19,7 @@ Users can quickly learn the rules of the game and type any words according to th
   1. Introduce yourself to the program.
   1. Learn the rules.
   1. Type the words according to the instructions.
-  1. Read the story gradually and have some fun.
+  1. Read the story gradually by hitting 'Enter' on your keyboard and have some fun.
   1. Play one more time and try to enter different words to have even more fun.
   1. As soon as you are sick and tired of the game, choose "Quit" and **send** the link to this program to your friends!
 
