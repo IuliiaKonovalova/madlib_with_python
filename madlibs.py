@@ -614,7 +614,7 @@ their traveling. But the question was how to let the rest of unexperienced
 Teach them everything that you know! We will give you time for it.
 Now leave."
 {Fore.WHITE}
-And {format_pronoun(adj1, noun1)} left while {verb_infinitive(verb1)}.
+And the {adj1} {noun1} left while {verb_infinitive(verb1)}.
 He was {verb_infinitive(verb1)} all {format_pronoun(noun1)} way back to
 the rest of {plural_noun(noun1)}.
 When all {plural_noun(noun1)} became aware of their nearest future, they
