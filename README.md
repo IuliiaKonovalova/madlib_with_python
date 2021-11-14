@@ -47,7 +47,7 @@ Users can quickly learn the rules of the game and type any words according to th
   The user can see a welcoming message which engages to start playing and the 
   polite question to enter the user's name:
   
-  <!-- here goes image -->
+  ![loading Program](documentation/features/welcome_message_name.png)
 
   - **When the user types a name.**
 
@@ -61,7 +61,7 @@ Users can quickly learn the rules of the game and type any words according to th
 
     1. Quit;
 
-      <!-- here goes image -->
+      ![loading Program](documentation/features/main_menu.png)
 
   The user can manipulate the terminal menu with the arrow keys to choose an option and the enter key to confirm the choice.
 
@@ -70,7 +70,7 @@ Users can quickly learn the rules of the game and type any words according to th
   The user will see the main rules of the game which are required to be followed.
   Below the rules, the user can find the main menu where he or she may choose another option.
 
-  <!-- here goes image -->
+  ![loading Program](documentation/features/rules.png)
 
   - **When the user chose "Play the game"**
 
@@ -82,7 +82,7 @@ Users can quickly learn the rules of the game and type any words according to th
 
   1. Go back;
 
-  <!-- here goes image -->
+  ![loading Program](documentation/features/sub_menu.png)
 
   Here the user can choose which story is preferable to play or go back to the main menu.
 
@@ -90,20 +90,21 @@ Users can quickly learn the rules of the game and type any words according to th
 
   The program alerts the user to be ready to type the words.
 
-  <!-- here goes image -->
+  ![loading Program](documentation/features/typing_words.png)
 
   Then, the user will be asked to type words according to the parts of speech. The user is allowed to use compound words to make the user's experience more fascinating.
   When all words are typed, the user will receive the whole story based on the keywords which he or she typed before.
   Below the story, the user can find the main menu where he or she may reread the rules, play another game, or quit the program.
 
-  *Here the image goes*
+  ![loading Program](documentation/features/after_input.png)
+  ![loading Program](documentation/features/story.png)
 
   - **When the user chose "Quit"**
 
 
   The user will see a goodbye message, and the program will be stopped.
 
-  <!-- here goes image -->
+  ![loading Program](documentation/features/goodbye_message.png)
 
 ---
 
