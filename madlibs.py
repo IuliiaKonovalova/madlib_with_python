@@ -629,7 +629,27 @@ go for the invasion in {Fore.RED}the {noun3.capitalize()} galaxy
 {Fore.WHITE}.
 
 And when everything was ready such as enough amount of provision, and enough
-{adj3} {plural_noun(noun4)} were built, they started 
+{adj3} {plural_noun(noun4)} were built, they started finial preparations.
+It was one of the masters who was in charge of the future voyage and made all
+arrangements after conculting all {Fore.YELLOW}{noun2.capitalize()}-masters
+{Fore.WHITE}. They taught {Fore.Blue}{noun1}{Fore.WHITE} how to behave in
+outerspace, how to {verb2} right to keep their {plural_noun(noun4)} on course.
+They also taught {Fore.Blue}{noun1}{Fore.WHITE} how not to be mislead by
+{Fore.RED}the Ruler{Fore.WHITE} of {Fore.RED}the {noun3.capitalize()} galaxy
+{Fore.WHITE}'s strategy of creating an illusion that might be crucial for
+the whole adventure.
+
+But there was nothing that could destroy the attitude of our {Fore.BLUE}brave
+{adj1} {noun1}{Fore.WHITE} who had turned out to be a pivotal figure in
+arranging this voyage.
+{format_pronoun(noun1).capitalize()} was dancing, {verb_infinitive(verb1)},
+and singing:
+{Fore.BLUE}
+"The {noun2} galaxy {verb_formatting(verb1)} along with me!
+Very soon I will discover the space sea!
+I will see other galaxies and lots of stars!
+I will learn everything and write memoirs!"
+{Fore.WHITE}
 
     '''
     print(madlib_2)
