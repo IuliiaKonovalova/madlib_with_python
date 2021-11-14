@@ -69,7 +69,7 @@ def main_madlib():
         f'''
 {Fore.YELLOW}Somewhere far far away...
     ''',
-        f'''s
+        f'''
 {Style.BRIGHT}{Fore.WHITE}
 {choose_article(adj1).capitalize()} {noun1}
 {conjugate(verb1, tense = PAST)} and went to {choose_article(adj2, noun2)}.
@@ -203,7 +203,7 @@ the wind blew and the ground opened up under them and swallowed them literally.
 They were falling down to nowhere...
 no light, no even a soul, just darkness everywhere...
 Only {color_adj2} sky above them.
-Eventually, the reached the ground.
+Eventually, they reached the ground.
 As luck would have it, they survived!
     ''',
         f'''
@@ -444,7 +444,8 @@ def main_madlib_2():
         adj3 = input('Type a adjective: ').strip()
     while len(noun4) < 2:
         noun4 = input('Type a noun: ').strip()
-    madlib_2 = f'''
+    madlib_2 = [
+        f'''
 {Style.BRIGHT}{Fore.WHITE}
 A long time ago...
 In a galaxy named {Fore.YELLOW}{noun2.capitalize()}{Fore.WHITE}...
@@ -454,27 +455,32 @@ These {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} loved
 They {conjugate(verb1, tense = PAST)} without stopping because
 of their belief that {Fore.YELLOW}the {noun2.capitalize()} galaxy{Fore.WHITE}
 was thriving on their favorite activity: {verb_infinitive(verb1)}.
-
-There were thousands of planets in this galaxy and almost all of them were
-inhabited with {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE}.
+    ''',
+        f'''
+{Style.BRIGHT}There were thousands of planets in this galaxy and almost all of
+them were inhabited with {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE}.
 Some were {adj1} and some were {adj2}.
-
-The main purpose of their lives was to earn
+    ''',
+        f'''
+{Style.BRIGHT}The main purpose of their lives was to earn
 {Fore.YELLOW}the {noun2.capitalize()} status{Fore.WHITE}.
-This status meant everything to the {Fore.BLUE}{plural_noun(noun1)}
-{Fore.WHITE}, no matter whether they were {adj1} or {adj2}.
-{Fore.BLUE}{choose_article(noun2).capitalize()}{Fore.WHITE}, which reached
-{Fore.YELLOW}the {noun2.capitalize()} status{Fore.WHITE} were called
+This status meant everything to the {Fore.BLUE}
+{plural_noun(noun1)}{Fore.WHITE}, no matter whether they were {adj1} or {adj2}.
+{Fore.BLUE}{choose_article(noun1).capitalize()}{Fore.WHITE}, which reached
+{Fore.YELLOW}the {noun2.capitalize()} status{Fore.WHITE} was called
 {Fore.YELLOW}{noun2.capitalize()}-master{Fore.WHITE}.
-
-{Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} were empowered to learn
-about other galaxies and even explore them.
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} were
+empowered to learn about other galaxies and even explore them.
 To obtain this status, {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} had to
 exchange goods with each other without any quarrels and {verb1} as much
 as possible during their lives.
-
-The most fascinating thing about all this {Fore.YELLOW}{noun2.capitalize()}
-galaxy{Fore.WHITE} was that they were using {plural_noun(noun3)}
+    ''',
+        f'''
+{Style.BRIGHT}The most fascinating thing about all this {Fore.YELLOW}
+{noun2.capitalize()}galaxy{Fore.WHITE} was
+that its inhabitans were using {plural_noun(noun3)}
 to communicate with each other inside their galaxy.
 Of course, only {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE}
 were aware of how to built those {plural_noun(noun3)}.
@@ -482,174 +488,227 @@ This meant that common {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} depended on
 masters a lot. However, masters needed to get materials to built
 {plural_noun(noun3)}. And those materials were in the Galaxy called
 {Fore.RED}{noun3.capitalize()}{Fore.WHITE}.
-
-This galaxy was a very dangerous one because it had
+    ''',
+        f'''
+{Style.BRIGHT}This galaxy was a very dangerous one because it had
 a {Fore.RED}Ruler{Fore.WHITE}, who hated {Fore.YELLOW}
 the {noun2.capitalize()} galaxy{Fore.WHITE} and did what ever it takes to
 destroy visitors from that galaxy.
-
-As {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} were using {adj3}
-{plural_noun(noun4)} to travel beyond {Fore.YELLOW}the {noun2.capitalize()}
-galaxy{Fore.WHITE}, they {conjugate(verb2, tense = PAST)} with lots of power
+    ''',
+        f'''
+{Style.BRIGHT}As {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE}
+were using {adj3} {plural_noun(noun4)} to travel beyond {Fore.YELLOW}
+the {noun2.capitalize()}galaxy{Fore.WHITE},
+they {conjugate(verb2, tense = PAST)} with lots of power
 as cosmos was a hostile environment for their {adj3} {plural_noun(noun4)}.
-
-So the {Fore.RED}Ruler{Fore.WHITE} of {Fore.RED}the {noun3.capitalize()} galaxy
-{Fore.WHITE} was always waiting for the
+    ''',
+        f'''
+{Style.BRIGHT}So the {Fore.RED}Ruler{Fore.WHITE} of {Fore.RED}
+the {noun3.capitalize()} galaxy{Fore.WHITE} was always waiting for the
 {adj3} {plural_noun(noun4)} to enter his territories.
 As soon as he was informed that {choose_article(adj3, noun4)}
-enters his galaxy, he ordered all of the living things in {Fore.RED}
-the {noun3} galaxy{Fore.WHITE} to {verb1}.
-It created the illusion for {Fore.YELLOW}{noun2.capitalize()}-
+entered his galaxy, he ordered all of the living things in {Fore.RED}
+the {noun3.capitalize()} galaxy{Fore.WHITE} to {verb1}.
+    ''',
+        f'''
+{Style.BRIGHT}It created the illusion for {Fore.YELLOW}{noun2.capitalize()}-
 masters{Fore.WHITE} that they were entering their
 own galaxy and they were stopping {verb_infinitive(verb2)} and as a
 consequence - losing control of their {plural_noun(noun4)}.
-
-Fortunately for the communication in the galaxy where {Fore.BLUE}{adj1} and
-{adj2} {plural_noun(noun1)}{Fore.WHITE} were living,
+    ''',
+        f'''
+{Style.BRIGHT}Fortunately for the communication in the galaxy where
+{Fore.BLUE}{adj1} and {adj2} {plural_noun(noun1)}{Fore.WHITE} were living,
 it was not always the case, and thus, they were getting their
 {plural_noun(noun3)} to chat with each other.
-
-But once one of the {Fore.BLUE}{adj1} {plural_noun(noun1)}{Fore.WHITE} decided
-to talk {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} into taking over
+    ''',
+        f'''
+{Style.BRIGHT}But once one of the {Fore.BLUE}{adj1} {plural_noun(noun1)}
+{Fore.WHITE} decided to talk {Fore.YELLOW}
+{noun2.capitalize()}-masters{Fore.WHITE} into taking over
 {Fore.RED}the {noun3.capitalize()} galaxy{Fore.WHITE} to make the recourses
 for building their communication devices easier to obtain.
-{Fore.BLUE}
-"We have to make it easier for our folks to perform {verb_infinitive(verb1)}!
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.BLUE}"We have to make it easier for our folks to
+perform {verb_infinitive(verb1)}!
 It is the most enjoyable activity for us!
-We can't allow some greedy {Fore.RED}Ruler{Fore.WHITE} to take it from us!
-Let's make more {adj3} {plural_noun(noun4)} and put more {noun1} in them that
-we could travel beyond our galaxy all together!"
-{Fore.YELLOW}
-"We cannot let simple {Fore.BLUE}{noun1}{Fore.YELLOW} to go farther than
-our terretory unprepared!
-They have to learn their way to the appropriate status!
-It is the low of our galaxy!"
-{Fore.BLUE}
-"I do know it!
+We can't allow some greedy {Fore.RED}Ruler{Fore.BLUE} to take it from us!
+Let's make more {adj3} {plural_noun(noun4)} and put more {plural_noun(noun1)}
+in them that we could travel beyond our galaxy all together!"
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.YELLOW}"We cannot let simple {Fore.BLUE}
+{plural_noun(noun1)}{Fore.YELLOW} to go farther than our terretory unprepared!
+They have to learn their own way to the appropriate status!
+It is the law of our galaxy!"
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.BLUE}"I do know it!
 But desperate times call for desperate measures!
 We have to make an exception for the sake of our galaxy
-and {plural_noun(noun1)} living here!"
-{Fore.YELLOW}
-"We have to take time to ponder it.
+and all {plural_noun(noun1)} living here!"
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.YELLOW}"We have to take time to ponder it.
 Let us think it through first cause it is all about the survival of our galaxy,
 and {plural_noun(noun1)} as well."
 {Fore.BLUE}
 "That's what I'm talking about! Take your time, and call me after you come up
 with your decision!"
 {Fore.WHITE}
-As {Fore.BLUE}{choose_article(adj1, noun1)}{Fore.WHITE} left the meeting,
+    ''',
+        f'''
+{Style.BRIGHT}As {Fore.BLUE}{choose_article(adj1, noun1)}
+{Fore.WHITE}left the meeting,
 {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} started their discussion.
 There were plenty of arguments for and against taking over
 {Fore.RED}the {noun3.capitalize()} galaxy{Fore.WHITE}. Some were insisting
 that such an adventure may bring tremendous loses and tons of troubles rather
 than unlimited resources of materials for {plural_noun(noun3)}. Others were
 having conserns that it may also be quite costly to create so many
-{adj3} {plural_noun(noun4)} for just a singe voyage. However, there were some
-supporters of {Fore.BLUE}{choose_article(adj1, noun1)}{Fore.WHITE}'s idea,
+{adj3} {plural_noun(noun4)} for just a singe voyage.
+    ''',
+        f'''
+{Style.BRIGHT}However, there were some supporters of {Fore.BLUE}
+{choose_article(adj1, noun1)}{Fore.WHITE}'s idea,
 and their main argument was that all these issues with obtaining materials
 for {plural_noun(noun3)} were pretty exasperating since traveling to the same
 hostile galaxy every now and then to get the materials was driving every one
 up the wall. All this never ending {verb_infinitive(verb2)} while moving
 on their {plural_noun(noun4)}. And even the fact that {Fore.RED}the Ruler
-{Fore.WHITE} was misleading {Fore.YELLOW}{noun2.capitalize()}-masters
-{Fore.WHITE} by using their own ritual of {verb_infinitive(verb1)}, which
-had been passed from generation to generation in {Fore.YELLOW}
+{Fore.WHITE}was misleading {Fore.YELLOW}{noun2.capitalize()}-masters
+{Fore.WHITE}by using their own ritual of {verb_infinitive(verb1)}, which
+had been passed from generations to generations in {Fore.YELLOW}
 the {noun2.capitalize()} galaxy{Fore.WHITE}, was significantly unbearable for
 everyone.
-
-After all these debates, the {Fore.BLUE}{adj1} {noun1}{Fore.WHITE}'s
-supporters {conjugate(verb1, tense = PAST)} and convinced the rest of
+    ''',
+        f'''
+{Style.BRIGHT}After all these debates, the {Fore.BLUE}{adj1}
+{noun1}{Fore.WHITE}'s supporters
+{conjugate(verb1, tense = PAST)} and convinced the rest of
 the masters to follow them. Although, the opposition had agreed, they presented
 the supporters with an ultimatum. According to this ultimatum,
 {Fore.BLUE}{choose_article(adj1, noun1)}{Fore.WHITE} should pass a special
 text first to prove that {format_pronoun(noun1)} is worthy.
-
-The {Fore.BLUE}{adj1} {noun1}{Fore.WHITE} was called to the masters to attend
-the event that had been created to check if {format_pronoun(noun1)} was worthy.
+    ''',
+        f'''
+{Style.BRIGHT}The {Fore.BLUE}{adj1} {noun1}{Fore.WHITE} was called
+to the masters to attend the event that had been created to check
+if {format_pronoun(noun1)} was worthy.
 He was given a list with some text and left alone in a small version of
 {choose_article(adj2, noun4)}.
-{Fore.BLUE}
-"That's interesting and at the same time pretty engaging..."{Fore.WHITE}
-- said the {Fore.BLUE}{adj1} {noun1}{Fore.WHITE} to
-{formatting_reflexive_pronoun(noun1)} and started reading.
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.BLUE}"That's interesting and at the same
+time pretty engaging..."{Fore.WHITE}- said the {Fore.BLUE}{adj1}
+{noun1}{Fore.WHITE} to {formatting_reflexive_pronoun(noun1)}
+and started reading.
 
-It was some kind of a quiz, which consisted five lines filled with words and
-one empty line at the end:
-
+{Style.BRIGHT}It was some kind of a quiz, which consisted five lines
+filled with words and one empty line at the end:
+    ''',
+        f'''
 1. {' '.join(idioms_list[1][0].lower().split( )[::-1])}
 2. {' '.join(idioms_list[1][1].lower().split( )[::-1])}
 3. {' '.join(idioms_list[1][2].lower().split( )[::-1])}
 4. {' '.join(idioms_list[1][3].lower().split( )[::-1])}
 5. {' '.join(idioms_list[0].lower().split( )[::-1])}
-6. ______
-{Fore.BLUE}
+6. ______{Fore.BLUE}
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.BLUE}
 "Hmm...Looks like there are some phrases written in reverse order..."
 {Fore.WHITE}
-{format_pronoun(noun1).capitalize()} readjasted the content in his mind and
+{format_pronoun(noun1).capitalize()} readjasted the content and
 instead of a meanenless phrases, {format_pronoun(noun1)} got the meaningful
 sentences instead:
-
+    ''',
+        f'''
 1. {idioms_list[1][0]}
 2. {idioms_list[1][1]}
 3. {idioms_list[1][2]}
 4. {idioms_list[1][3]}
 5. {idioms_list[0]}
 6. ______
-{Fore.BLUE}
-"Got it!"
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.BLUE}"Got it!"
 {Fore.WHITE}
 And {format_pronoun(noun1)} wrote a single sentence where the empty line was:
 {idioms_dictionary.get(idioms_list[0])}.
-After all he started {verb_infinitive(verb1)} to attract {Fore.YELLOW}
-{noun2.capitalize()}-masters{Fore.WHITE}' attention. And it worked!
+    ''',
+        f'''
+{Style.BRIGHT}After all he started {verb_infinitive(verb1)} to attract
+{Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE}' attention.
+And it worked!
 They entered the confined place where the {Fore.BLUE}{adj1}
-{noun1}{Fore.WHITE} had stayed alone while solving a word puzzle.
+{noun1}{Fore.WHITE} had stayed alone while solving a words' puzzle.
 They took the piece of paper and nodded in agreement.
-Had it not been for the bright mind of the {Fore.BLUE}{adj1}
+    ''',
+        f'''
+{Style.BRIGHT}Had it not been for the bright mind of the {Fore.BLUE}{adj1}
 {noun1}{Fore.WHITE}, they would never have allowed him to participate in
 their traveling. But the question was how to let the rest of unexperienced
 {plural_noun(noun1)} to go with them.
-{Fore.YELLOW}
-"We will give you the green light! Go and insight the rest of our folks!
-Teach them everything that you know! We will give you time for it.
-Now leave."
-{Fore.WHITE}
-And the {adj1} {noun1} left while {verb_infinitive(verb1)}.
-He was {verb_infinitive(verb1)} all {format_pronoun(noun1)} way back to
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.YELLOW}"We will give you the green light!
+Go and insight the rest of our folks!
+Teach them everything that you know!
+We will give you time for it.
+Now leave."{Fore.WHITE}
+    ''',
+        f'''
+{Style.BRIGHT}And the {adj1} {noun1} left while {verb_infinitive(verb1)}.
+He was {verb_infinitive(verb1)} all the way back to
 the rest of {plural_noun(noun1)}.
 When all {plural_noun(noun1)} became aware of their nearest future, they
-were over the moon! And the preparations had started!
-
-All {Fore.YELLOW}the {noun2.capitalize()} galaxy{Fore.WHITE} were in real hurry
-to get everything ready for their adventure into the space.
+were over the moon! And the preparations started!
+    ''',
+        f'''
+{Style.BRIGHT}All {Fore.YELLOW}the {noun2.capitalize()} galaxy{Fore.WHITE}
+was in real hurry to get everything ready for their adventure into the space.
 Each {adj1} {noun1} and each {adj2} {noun1} wanted to finish with limited
 communication between each other. As chatting on {plural_noun(noun3)} and
-{verb_infinitive(verb1)} were their favorite activities they were eager to
-go for the invasion in {Fore.RED}the {noun3.capitalize()} galaxy
-{Fore.WHITE}.
-
-And when everything was ready such as enough amount of provision, and enough
-{adj3} {plural_noun(noun4)} were built, they started finial preparations.
+{verb_infinitive(verb1)} were their favorite activities, they were eager to
+go for the invasion of
+{Fore.RED}the {noun3.capitalize()} galaxy{Fore.WHITE}.
+    ''',
+        f'''
+{Style.BRIGHT}And when everything was ready, such as enough amount of provision
+was gathered, and enough {adj3} {plural_noun(noun4)} were built,
+they started finial preparations.
 It was one of the masters who was in charge of the future voyage and made all
-arrangements after conculting all {Fore.YELLOW}{noun2.capitalize()}-masters
-{Fore.WHITE}. They taught {Fore.Blue}{noun1}{Fore.WHITE} how to behave in
-outerspace, how to {verb2} right to keep their {plural_noun(noun4)} on course.
-They also taught {Fore.Blue}{noun1}{Fore.WHITE} how not to be mislead by
-{Fore.RED}the Ruler{Fore.WHITE} of {Fore.RED}the {noun3.capitalize()} galaxy
-{Fore.WHITE}'s strategy of creating an illusion that might be crucial for
+arrangements after conculting all
+{Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE}.
+    ''',
+        f'''
+{Style.BRIGHT}They taught {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} how to
+behave in outerspace, how to {verb2} right to keep their
+{plural_noun(noun4)} on course, how not to be trapped in
+{Fore.RED}the Ruler{Fore.WHITE} of {Fore.RED}the {noun3.capitalize()} galaxy's
+strategy{Fore.WHITE} of creating an illusion that might be crucial for
 the whole adventure.
-
-But there was nothing that could destroy the attitude of our {Fore.BLUE}brave
-{adj1} {noun1}{Fore.WHITE} who had turned out to be a pivotal figure in
-arranging this voyage.
+    ''',
+        f'''
+{Style.BRIGHT}But there was nothing that could destroy the attitude of our
+{Fore.BLUE}brave {adj1} {noun1}{Fore.WHITE} that had turned out to be
+a pivotal figure in arranging this voyage.
 {format_pronoun(noun1).capitalize()} was dancing, {verb_infinitive(verb1)},
 and singing:
-{Fore.BLUE}
-"The {noun2} galaxy {verb_formatting(verb1)} along with me!
+    ''',
+        f'''
+{Style.BRIGHT}{Fore.BLUE}
+"The {noun2} galaxy {verb_formatting(verb1)}along with me!
 Very soon I will discover the space sea!
 I will see other galaxies and lots of stars!
 I will learn everything and write memoirs!"
 {Fore.WHITE}
-
     '''
-    print(madlib_2)
+    ]
+    for paragraph in madlib_2:
+        print(paragraph)
+        options = ['Continue']
+        main_menu = TerminalMenu(options)
+        main_menu.show()
