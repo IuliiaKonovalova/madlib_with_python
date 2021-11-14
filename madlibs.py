@@ -629,6 +629,7 @@ go for the invasion in {Fore.RED}the {noun3.capitalize()} galaxy
 {Fore.WHITE}.
 
 And when everything was ready such as enough amount of provision, and enough
+{adj3} {plural_noun(noun4)} were built, they started 
 
     '''
     print(madlib_2)

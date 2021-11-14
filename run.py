@@ -77,13 +77,13 @@ Please read the rules attentively and follow them precisely!
             message_to_user_2 = f'''
     {Fore.GREEN}The end.{Fore.WHITE}{Style.RESET_ALL}
                 '''
-            if suboptions_choice == '1. Story 1':
+            if suboptions_choice == '1. Story 1: "Absolute Madness"':
                 print(message_to_user_1)
                 sleep(1)
                 main_madlib()
                 sleep(1)
                 print(message_to_user_2)
-            elif suboptions_choice == '2. Story 2':
+            elif suboptions_choice == '2. Story 2: "Slight Madness"':
                 print(message_to_user_1)
                 sleep(1)
                 main_madlib_2()
