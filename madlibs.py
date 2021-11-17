@@ -201,7 +201,7 @@ into the hole with the sentence:
 {Style.BRIGHT}As soon as the coin disappeared in the hole,
 the wind blew and the ground opened up under them and swallowed them literally.
 They were falling down to nowhere...
-no light, no even a soul, just darkness everywhere...
+no light, not even a soul, just darkness everywhere...
 Only {color_adj2} sky above them.
 Eventually, they reached the ground.
 As luck would have it, they survived!
@@ -278,7 +278,7 @@ a dark {color_adj2} prison cell.
 "What's in my mind? I'll tell you what's in my mind!
 What's wrong with you, {famous_person.title()}?
 You think that if you're famous and have a lot of {plural_noun(noun4)},
-you are allowed to say what ever you want?"
+you are allowed to say whatever you want?"
     ''',
         f'''
 {Style.BRIGHT}{Fore.WHITE}Then they heard some wishper...
@@ -319,7 +319,7 @@ Tell us what you want in return!"
 {Fore.MAGENTA}
 "You see I have some obligations.
 I have other {adj2} {plural_noun(noun2)}.
-I have to provide for {format_pronoun(noun2)}".
+I have to provide for my {plural_noun(noun2)}".
 I will give you a little mirror and tell how to use it.
 It will help you to escape from the old {plural_noun(noun7)}.
 But you have to give everything that you have
@@ -352,7 +352,7 @@ you keep your {plural_noun(noun4)}?"
     ''',
         f'''
 {Style.BRIGHT}{Fore.MAGENTA}"Excellent!
-{famous_person.title()}, look the mirror and say:
+{famous_person.title()}, look at the mirror and say:
 I, {famous_person.title()}, give all my {plural_noun(noun4)} away willingly.
 Then you have to make 5 jumps,
 but after each jump you need to {verb4} every time.
@@ -374,7 +374,7 @@ and hand out 1 wooden box to the {noun1}
 and 1 wooden box to {famous_person.title()}.
 {Fore.MAGENTA}
 "Each of you, place the box on your right hand
-and put the lift hand above the box."
+and put the left hand above the box."
 "Now shake it as hard as you can to let the key fall from the boxes."
 {Fore.WHITE}
 {famous_person.title()} and {noun1} did as the voice had ordered.
@@ -479,20 +479,20 @@ as possible during their lives.
     ''',
         f'''
 {Style.BRIGHT}The most fascinating thing about all this {Fore.YELLOW}
-{noun2.capitalize()}galaxy{Fore.WHITE} was
-that its inhabitans were using {plural_noun(noun3)}
+{noun2.capitalize()} galaxy{Fore.WHITE} was
+that its inhabitants were using {plural_noun(noun3)}
 to communicate with each other inside their galaxy.
 Of course, only {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE}
-were aware of how to built those {plural_noun(noun3)}.
+were aware of how to build those {plural_noun(noun3)}.
 This meant that common {Fore.BLUE}{plural_noun(noun1)}{Fore.WHITE} depended on
-masters a lot. However, masters needed to get materials to built
+masters a lot. However, masters needed to get materials to build
 {plural_noun(noun3)}. And those materials were in the Galaxy called
 {Fore.RED}{noun3.capitalize()}{Fore.WHITE}.
     ''',
         f'''
 {Style.BRIGHT}This galaxy was a very dangerous one because it had
 a {Fore.RED}Ruler{Fore.WHITE}, who hated {Fore.YELLOW}
-the {noun2.capitalize()} galaxy{Fore.WHITE} and did what ever it takes to
+the {noun2.capitalize()} galaxy{Fore.WHITE} and did whatever it takes to
 destroy visitors from that galaxy.
     ''',
         f'''
@@ -539,7 +539,7 @@ in them that we could travel beyond our galaxy all together!"
     ''',
         f'''
 {Style.BRIGHT}{Fore.YELLOW}"We cannot let simple {Fore.BLUE}
-{plural_noun(noun1)}{Fore.YELLOW} to go farther than our terretory unprepared!
+{plural_noun(noun1)}{Fore.YELLOW} to go farther than our territory unprepared!
 They have to learn their own way to the appropriate status!
 It is the law of our galaxy!"
     ''',
@@ -564,10 +564,10 @@ with your decision!"
 {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE} started their discussion.
 There were plenty of arguments for and against taking over
 {Fore.RED}the {noun3.capitalize()} galaxy{Fore.WHITE}. Some were insisting
-that such an adventure may bring tremendous loses and tons of troubles rather
+that such an adventure may bring tremendous losses and tons of troubles rather
 than unlimited resources of materials for {plural_noun(noun3)}. Others were
-having conserns that it may also be quite costly to create so many
-{adj3} {plural_noun(noun4)} for just a singe voyage.
+having concerns that it may also be quite costly to create so many
+{adj3} {plural_noun(noun4)} for just a single voyage.
     ''',
         f'''
 {Style.BRIGHT}However, there were some supporters of {Fore.BLUE}
@@ -590,7 +590,7 @@ everyone.
 the masters to follow them. Although, the opposition had agreed, they presented
 the supporters with an ultimatum. According to this ultimatum,
 {Fore.BLUE}{choose_article(adj1, noun1)}{Fore.WHITE} should pass a special
-text first to prove that {format_pronoun(noun1)} is worthy.
+test first to prove that {format_pronoun(noun1)} is worthy.
     ''',
         f'''
 {Style.BRIGHT}The {Fore.BLUE}{adj1} {noun1}{Fore.WHITE} was called
@@ -648,7 +648,7 @@ They took the piece of paper and nodded in agreement.
     ''',
         f'''
 {Style.BRIGHT}Had it not been for the bright mind of the {Fore.BLUE}{adj1}
-{noun1}{Fore.WHITE}, they would never have allowed him to participate in
+{noun1}{Fore.WHITE}, they would have never allowed him to participate in
 their traveling. But the question was how to let the rest of unexperienced
 {plural_noun(noun1)} to go with them.
     ''',
@@ -678,9 +678,9 @@ go for the invasion of
         f'''
 {Style.BRIGHT}And when everything was ready, such as enough amount of provision
 was gathered, and enough {adj3} {plural_noun(noun4)} were built,
-they started finial preparations.
+they started final preparations.
 It was one of the masters who was in charge of the future voyage and made all
-arrangements after conculting all
+arrangements after consulting all
 {Fore.YELLOW}{noun2.capitalize()}-masters{Fore.WHITE}.
     ''',
         f'''
@@ -700,7 +700,7 @@ and singing:
     ''',
         f'''
 {Style.BRIGHT}{Fore.BLUE}
-"The {noun2} galaxy {verb_formatting(verb1)}along with me!
+"The {noun2} galaxy {verb_formatting(verb1)} along with me!
 Very soon I will discover the space sea!
 I will see other galaxies and lots of stars!
 I will learn everything and write memoirs!"
