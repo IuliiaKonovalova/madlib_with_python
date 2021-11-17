@@ -261,6 +261,10 @@ Create a local copy of the GitHub repository by following one of the two process
   1. Run the following command
   - `git clone https://github.com/IuliiaKonovalova/madlib_with_python.git`
 
+- Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/IuliiaKonovalova/madlib_with_python)
+
   1. Install Python module dependencies:
      
       1. Navigate to the folder madlib_with_python by executing the command:
