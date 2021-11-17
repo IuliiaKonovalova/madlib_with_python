@@ -63,11 +63,11 @@ completely:
 
 - **uncountable_nouns.py**
 
-![Python Validator](documentation/pep8_validator/validator_uncountable_nouns_line_at_the_end.png)
+![Python Validator](documentation/pep8_validator/uncountable_nouns_line_at_the_end.png)
 
 - **gender_words.py**
 
-![Python Validator](documentation/pep8_validator/validator_gender_words_line_at_the_end.png)
+![Python Validator](documentation/pep8_validator/gender_words_line_at_the_end.png)
 
 - **idioms.py**
 
