@@ -157,7 +157,7 @@ The flowchart represents the logic of the application:
 + **Solved bugs**
 
 
-1. The function ```choosing_article(word)``` did not give the correct article if the nout was uncountable.
+1. The function ```choosing_article(word)``` did not give the correct article if the noun was uncountable.
 
     - *Solutions:* rewrote function with using args; rather than checking only the beginning of the word, it checks all arguments and presents the correct  article
 
@@ -231,48 +231,11 @@ The flowchart represents the logic of the application:
       - For example, the word 'bus' was pluralized as 'buss'.
 
 ---
-
-
 ## Testing
 
-The program was tested constantly during its development process.
-Other users also tested it in order to spot possible grammatical mistakes that the code may present.
+Please refer to the [TESTING.md](TESTING.md) file for all test related documentation.
 
-### Validators
-
-Valentin Bryukhanov's [online validation tool](http://pep8online.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into the validator.
-
-No errors were found:
-
-- **run.py**
-
-![Python Validator](documentation/pep8_validator/validator_run_file.png)
-
-- **words_formatting.py**
-
-![Python Validator](documentation/pep8_validator/validator_words_formatting_file.png)
-
-- **madlibs.py**
-
-![Python Validator](documentation/pep8_validator/validator_madlibs_file.png)
-
-- **uncountable_nouns.py**
-
-![Python Validator](documentation/pep8_validator/validator_uncountable_nouns_file.png)
-
-- **gender_words.py**
-
-![Python Validator](documentation/pep8_validator/validator_gender_words_file.png)
-
-- **idioms.py**
-
-![Python Validator](documentation/pep8_validator/validator_idioms_file.png)
-
-- **dictionary_letters.py**
-
-![Python Validator](documentation/pep8_validator/validator_dictionary_letters_file.png)
 ---
-
 ## Deployment
 
 - The program was deployed to [Heroku](https://dashboard.heroku.com).
