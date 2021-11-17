@@ -7,7 +7,6 @@ from uncountable_nouns import uncountable_nouns
 from idioms import idioms_dictionary
 from dictionary_letters import dictionary_letters
 
-nltk.set_proxy('127.0.0.1:41091')
 nltk.download('wordnet')
 
 
