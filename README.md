@@ -150,9 +150,9 @@ The flowchart represents the logic of the application:
 - [Draw.io](https://www.lucidchart.com/) was used to make a flowchart for the README file.
 
 
---
+---
 
-### Bugs
+## Bugs
 
 + **Solved bugs**
 
