@@ -148,6 +148,7 @@ The flowchart represents the logic of the application:
 - [GitHub](https://github.com/) was used to host the code of the website.
 - [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
 - [Draw.io](https://www.lucidchart.com/) was used to make a flowchart for the README file.
+- [render.com](https://render.com/) was used to deploy the project.
 
 
 ---
@@ -419,9 +420,10 @@ Link to the deployed application on Render: [The Maddest Madlib](https://the-mad
 
 - List of Uncountable Nouns was made based on the [7ESL](https://7esl.com/uncountable-nouns/).
 - dictionary for idioms was made out of the tables published by [EF](https://www.ef.edu/english-resources/english-idioms/).
-- Colour formatting: [Colorama](https://pypi.org/project/colorama/).
+- Color formatting: [Colorama](https://pypi.org/project/colorama/).
 - Terminal menu: [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/).
-- Pluralizing and transforming verb into past time: [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) and [NLTK Package](https://www.nltk.org/)
+- Pluralizing and transforming verb into past time: [Pattern Package](https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/) and [NLTK Package](https://www.nltk.org/)\
+- [render.com](https://render.com/) for hosting the application.
 
 
 ---
