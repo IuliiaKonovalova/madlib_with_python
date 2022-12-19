@@ -2,7 +2,7 @@
 
 ![Responsive Mockup](documentation/responsive_mockup.png)
 
-*The link to [the Maddest Madlib](https://the-maddest-madlib.herokuapp.com/)*
+*The link to [the Maddest Madlib](https://the-maddest-madlib.onrender.com)*
 
 The Maddest Madlib is a Python terminal project whose primary purpose is to boost users' moods and provide various experiences.
 
@@ -14,7 +14,7 @@ Users can quickly learn the rules of the game and type any words according to th
 
 ## How to play:
 
-  1. Click this *[link](https://the-maddest-madlib.herokuapp.com)* or copy this text: `https://the-maddest-madlib.herokuapp.com` and paste it in your browser's address bar.
+  1. Click this *[link](https://the-maddest-madlib.onrender.com)* or copy this text: `https://the-maddest-madlib.onrender.com` and paste it in your browser's address bar.
   1. As soon as the page is loaded, click 'RUN PROGRAM'.
   1. Introduce yourself to the program.
   1. Learn the rules.
@@ -23,7 +23,7 @@ Users can quickly learn the rules of the game and type any words according to th
   1. Play one more time and try to enter different words to have even more fun.
   1. As soon as you are sick and tired of the game, choose "Quit" and **send** the link to this program to your friends!
 
-  Link to the game: *https://the-maddest-madlib.herokuapp.com*
+  Link to the game: *https://the-maddest-madlib.onrender.com*
 
 ---
 ## User Stories
@@ -239,7 +239,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 ## Deployment
 
 - The program was deployed to [Heroku](https://dashboard.heroku.com).
-- The program can be reached by the [link](https://the-maddest-madlib.herokuapp.com/)
+- The program can be reached by the [link](https://the-maddest-madlib.onrender.com/)
 ### To deploy the project as an application that can be **run locally**:
 
 *Note:*
